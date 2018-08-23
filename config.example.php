@@ -12,10 +12,10 @@ define("MD_ROOT","/home/cky/workspace/md/");
 define("DEFAULT_ARTICLE",MD_ROOT."link.md");
 
 // markdown目录下需要被跳过的文件夹
-$IGNORE_DIR = [".git","img"];
+$IGNORE_DIR = [".git","img","android/java教程"];
 
 // markdown目录下需要被跳过的文件
-$IGNORE_FILE = ["link","default","c/c工程","xxx_dir/xxx_dir/file_name"];
+$IGNORE_FILE = ["link","default","xxx_dir/xxx_dir/file_name"];
 
 /////////////////////////// Blog 系统配置 ///////////////////////////
 
