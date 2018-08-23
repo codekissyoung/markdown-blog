@@ -1,0 +1,348 @@
+/* 通用样式 */
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+$article_width: 1020px;
+// $backgroud_color:#f5f5d5;
+$backgroud_color:white;
+$border_line_color:grey;
+
+
+body
+{
+    background: $backgroud_color;
+    margin-top: -20px;
+}
+
+#site-category
+{
+    background: $backgroud_color;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 1px 5px grey;
+
+    #site-category-content
+    {
+        width:$article_width;
+        margin: 0px auto;
+        position: relative;
+        height: 100%;
+        #blog-name
+        {
+            position: absolute;
+            bottom: 8px;
+            a{
+                color: #636b6f;
+                font-size: 26px;
+                text-decoration: none;
+            }
+        }
+        #blog-category-list
+        {
+            position: absolute;
+            bottom: 8px;
+            left: 244px;
+            a{
+                color: #636b6f;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+        #search-article
+        {
+            // color:black;
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+            // width:240px;
+            form{
+                text-align:left;
+                border:1px solid #ddd;
+                // border-radius: 10px;
+                input[type="text"]{
+                    width:180px;
+                    height: 18px;
+                    // padding:2px 0px;
+                    padding: 0px;
+                    padding-left:10px;
+                    margin: 0px;
+                    padding-right: 10px;
+                    border:0px;
+                    // border-top-left-radius: 10px;
+                    // border-bottom-left-radius: 10px;
+                    color: #636b6f;
+                    // vertical-align:middle;
+                    outline: none;
+                    letter-spacing: 1px;
+                }
+                input[type="submit"]
+                {
+                    border:0px;
+                    border-left: 1px solid #ddd;
+                    // cursor:pointer;
+                    padding-top:2px;
+                    padding-bottom:2px;
+                    // border-top-right-radius: 10px;
+                    // border-bottom-right-radius: 10px;
+                    font-weight:normal;
+                    // border:1px solid #dcdcdc;
+                    // text-decoration:none;
+                    color:#636b6f;
+                    // display:inline-block;
+                    // text-shadow:1px 1px 0px #ffffff;
+                    // box-shadow:inset 1px 1px 0px 0px #ffffff;
+                    // box-shadow:1px 0px 13px -1px #ffffff;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+
+}
+
+#site-category-box-fill
+{
+    height: 80px;
+    width: 100%;
+}
+
+#article-headbar
+{
+    text-align: center;
+}
+
+#article
+{
+    width: $article_width;
+    margin:0px auto;
+    border: 1px solid #ddd;
+    position: relative;
+    a{
+        text-decoration: none;
+    }
+    #article-category-button
+    {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        text-align: center;
+        width: 20px;
+        padding-top: 6px;
+        padding-bottom: 4px;
+        padding-right: 6px;
+        // background-color: #fffbbb;
+        border: 1px solid #ddd;
+        border-left: 0px;
+        a{
+            writing-mode: vertical-lr;
+            color: #706b6e;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+}
+
+#article-content
+{
+    background-color: $backgroud_color;
+    top: 0px;
+    padding:20px;
+    padding-left:40px;
+    padding-right:40px;
+    box-sizing:border-box;
+    letter-spacing:1px;
+    min-height:1000px;
+    font-family: "ubuntu";
+    h1,h2,h3,h4,h5{
+        display: block;
+        font-weight: 400;
+        font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
+        color:rgb(44, 62, 80);
+    }
+    h1{
+        font-size:24px;
+        color: black;
+        text-align:center;
+    }
+    h2{
+        font-size:20px;
+        margin:20px 0px 5px 0px;
+        margin-top: 40px;
+    }
+    h3{
+        font-size:18px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 22px;
+    }
+    h4{
+        font-size:16px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 22px;
+    }
+    h5{
+        font-size:14px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 22px;
+    }
+    a{
+        color: #00a5f7;
+    }
+    pre{
+        margin: 0px 20px;
+        background-color:rgb(248, 248, 248);
+        padding:10px;
+        overflow:auto;
+        border-radius:5px;
+        code{
+            width:100%;
+            font-family: Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
+            line-height: 1.5;
+            font-size: 13px;
+            letter-spacing:0px;
+        }
+    }
+    ol{
+      font-size: 14px;
+    }
+    li{
+        margin-top:7px;
+        margin-bottom:3px;
+    }
+    p{
+        line-height:1.5;
+        text-align:justify;
+        margin:0px;
+        font-size:14px;
+        letter-spacing: 1px;
+        color: #706b6e;
+        font-family: "Monaco","Ubuntu mono";
+        code{
+            // color:#FF6600;
+            border-radius: 4px;
+            font-size: 13px;
+            padding: 2px;
+            // background-color: #fffbc4;
+            // background-color: #fffde2;
+            font-family: "Monaco","Ubuntu mono";
+        }
+    }
+    img{
+        display: inline-block;
+    }
+    span.search_key{
+        color:#e810aa;
+    }
+    table
+    {
+        margin-bottom:10px;
+        thead
+        {
+            background-color:#ddd;
+        }
+        th
+        {
+            font-size:16px;
+        }
+        th,td
+        {
+            padding:5px 10px;
+            border:1px solid #eee;
+        }
+    }
+}
+
+
+#main_category
+{
+    position: absolute;
+    border-right: 1px solid #ddd;
+    left: 0px;
+    top:0px;
+    display: none;
+    background-color:$backgroud_color;
+    opacity:0.9;
+    z-index:1;
+    top:0px;
+    left: 0px;
+    width: 300px;
+    #main-category-content{
+        width:300px;
+        overflow:auto;
+        height: 100%;
+        padding-top:100px;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #ddd;
+    }
+    h1,h2,h3,h4,h5{
+        font-weight:normal;
+        color: #000415;
+    }
+    .main-title
+    {
+        margin:0px 0px;
+        font-family : Monaco;
+        text-align:left;
+        background-color:#636b6f;
+        color:white;
+        position:fixed;
+        top:0px;
+        left:0px;
+        h1
+        {
+            width:240px;
+            text-align:justify;
+            text-justify:inter-word;
+            letter-spacing:1px;
+            margin:0px;
+            padding:0px;
+            font-size:20px;
+        }
+    }
+    .head-tag
+    {
+        display:inline-block;
+    }
+    a{
+        color:#636bfb;
+        text-decoration:none;
+        font-size:13px;
+        font-weight: normal;
+    }
+    a.active{
+        color:#e83e8c;
+        font-weight: bold;
+    }
+    ul,li{
+        text-decoration:none;
+        list-style:none;
+        line-height:1.5;
+    }
+    ul{
+        padding-left:20px;
+        margin: 0px;
+    }
+    h2{
+        cursor:pointer;
+        letter-spacing:1px;
+        text-align:left;
+        font-size:17px;
+        font-family: "ubuntu mono";
+        margin:0px;
+        .caret{
+            margin-left:10px;
+        }
+    }
+}
+
+#site-footer{
+    height: 200px;
+}

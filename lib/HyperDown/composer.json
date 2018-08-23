@@ -1,0 +1,22 @@
+{
+    "name": "joyqi/hyper-down",
+    "description": "A light weight markdown parser library",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "joyqi",
+            "email": "joyqi@segmentfault.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+ 		"psr-4": { "HyperDown\\": "./" }
+	},
+    "scripts": {
+        "test": [
+            "php test/test.php"
+        ]
+    }
+}
