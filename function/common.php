@@ -21,13 +21,17 @@ function file_tree($path)
 function file_tree_print($tree,$cf = '',$path = false)
 {/*{{{*/
     global $IGNORE_DIR;
-	if($path){
+    global $IGNORE_FILE;
+    if($path)
+    {
 		if(strpos($cf,$path) === false){
 			$html = "<ul class=hide>";
 		}else{
 			$html = "<ul>";
 		}
-	}else{
+    }
+    else
+    {
 		$html = "<ul>";
 	}
 
@@ -41,18 +45,27 @@ function file_tree_print($tree,$cf = '',$path = false)
 		}
 		else
 		{
-			if(!preg_match("/md$/",$leaf)) continue;  // 跳过不是md结尾的文件
-			if($leaf == "link.md") continue; // 跳过我自己的简历
+			if(!preg_match("/md$/",$leaf)) continue;
 
 			$leaf = substr($leaf,0,-3);
-			if($path){
+
+            if( $path )
+            {
 				$href = "$path/$leaf";
-			}else{
+            }
+            else
+            {
 				$href = "/$leaf";
 			}
-			if($cf == $href){
+
+            if( in_array( substr($href,1), $IGNORE_FILE ) ) continue;
+
+            if($cf == $href)
+            {
 				$html .= "<li><a href='$href' class=active>$leaf</a></li>";
-			}else{
+            }
+            else
+            {
 				$html .= "<li><a href='$href'>$leaf</a></li>";
 			}
 		}
