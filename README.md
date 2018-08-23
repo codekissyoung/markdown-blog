@@ -6,7 +6,7 @@
 
 1. `git clone` 本项目到你的`Linux`服务器
 1. 将`Apache`或`Nginx`或者其他`Web服务器`的`域名解析路径`设置成本项目的`web`目录
-1. 修改本项目`config.php`文件, 可以设置的选项如下:
+1. 复制`config.example.php`为`config.php`文件, 然后修改之,可以设置的选项如下:
 1. 在本项目根目录新建一个`favicon.ico`文件为自己的图标文件
 
 ```php
