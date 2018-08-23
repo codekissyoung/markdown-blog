@@ -11,6 +11,9 @@ define("MD_ROOT","/home/cky/workspace/md/");
 // 博客首页加载的 markdown 文件
 define("DEFAULT_ARTICLE",MD_ROOT."link.md");
 
+// markdown目录下需要被跳过的文件夹
+$IGNORE_DIR = [".git","img"];
+
 /////////////////////////// Blog 系统配置 ///////////////////////////
 
 define("APP_ROOT",__DIR__);

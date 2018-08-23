@@ -27,7 +27,7 @@ if( $search_key )
     $html = "";
     $last_search_article = "";
     $li = "";
-    exec( "grep -ir \"$search_key\" ".MD_ROOT, $ret_arr, $ret_code );
+    exec( "grep -ir \"$search_key\" ".MD_ROOT." | grep -v \`\`\`", $ret_arr, $ret_code );
     if( !empty($ret_arr) )
     {
         foreach( $ret_arr as $key => $value )
@@ -35,7 +35,7 @@ if( $search_key )
             $ret            = explode(".md:",$value);
             $href           = str_replace(MD_ROOT,"",$ret[0]);
             $value          = htmlentities( $ret[1] );
-            $value          = str_replace( $search_key ,'<span class=search_key>'.$search_key.'</span>', $value );
+            $value          = str_ireplace( $search_key ,'<span class=search_key>'.$search_key.'</span>', $value );
             $li             = $li."<li class=search-list> $value </li>";
 
             if( $last_search_article != $href )

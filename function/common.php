@@ -20,6 +20,7 @@ function file_tree($path)
 // $cf 是当前文章
 function file_tree_print($tree,$cf = '',$path = false)
 {/*{{{*/
+    global $IGNORE_DIR;
 	if($path){
 		if(strpos($cf,$path) === false){
 			$html = "<ul class=hide>";
@@ -32,7 +33,7 @@ function file_tree_print($tree,$cf = '',$path = false)
 
 	foreach($tree as $key => $leaf)
 	{
-		if($key === 'img') continue; // 过滤图片文件夹
+        if(in_array($key,$IGNORE_DIR)) continue;
 
 		if(is_array($leaf))
 		{
