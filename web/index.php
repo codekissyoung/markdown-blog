@@ -13,7 +13,7 @@ $article = DEFAULT_ARTICLE;
 if( $current_article )
     $article = MD_ROOT."{$current_article}.md";
 
-$title  = trim(join('-',explode("/",$current_article))."-CodeKissYoung Blog",'-');
+$title  = trim(join('-',explode("/",$current_article))."-".BLOG_TITLE,'-');
 
 // 加载文章内容
 $parser  = new HyperDown\Parser();
