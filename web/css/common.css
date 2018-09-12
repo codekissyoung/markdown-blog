@@ -17,52 +17,52 @@ body {
   width: 100%;
   height: 70px;
   box-shadow: 0 1px 5px grey; }
-  #site-category #site-category-content {
-    width: 1020px;
-    margin: 0px auto;
-    position: relative;
-    height: 100%; }
-    #site-category #site-category-content #blog-name {
-      position: absolute;
-      bottom: 8px; }
-      #site-category #site-category-content #blog-name a {
-        color: #636b6f;
-        font-size: 26px;
-        text-decoration: none; }
-    #site-category #site-category-content #blog-category-list {
-      position: absolute;
-      bottom: 8px;
-      left: 244px; }
-      #site-category #site-category-content #blog-category-list a {
-        color: #636b6f;
-        font-size: 18px;
-        text-decoration: none; }
-    #site-category #site-category-content #search-article {
-      position: absolute;
-      right: 0px;
-      bottom: 10px; }
-      #site-category #site-category-content #search-article form {
-        text-align: left;
-        border: 1px solid #ddd; }
-        #site-category #site-category-content #search-article form input[type="text"] {
-          width: 180px;
-          height: 18px;
-          padding: 0px;
-          padding-left: 10px;
-          margin: 0px;
-          padding-right: 10px;
-          border: 0px;
-          color: #636b6f;
-          outline: none;
-          letter-spacing: 1px; }
-        #site-category #site-category-content #search-article form input[type="submit"] {
-          border: 0px;
-          border-left: 1px solid #ddd;
-          padding-top: 2px;
-          padding-bottom: 2px;
-          font-weight: normal;
-          color: #636b6f;
-          outline: none; }
+#site-category #site-category-content {
+  width: 1020px;
+  margin: 0px auto;
+  position: relative;
+  height: 100%; }
+#site-category #site-category-content #blog-name {
+  position: absolute;
+  bottom: 8px; }
+#site-category #site-category-content #blog-name a {
+  color: #636b6f;
+  font-size: 26px;
+  text-decoration: none; }
+#site-category #site-category-content #blog-category-list {
+  position: absolute;
+  bottom: 8px;
+  left: 244px; }
+#site-category #site-category-content #blog-category-list a {
+  color: #636b6f;
+  font-size: 18px;
+  text-decoration: none; }
+#site-category #site-category-content #search-article {
+  position: absolute;
+  right: 0px;
+  bottom: 10px; }
+#site-category #site-category-content #search-article form {
+  text-align: left;
+  border: 1px solid #ddd; }
+#site-category #site-category-content #search-article form input[type="text"] {
+  width: 180px;
+  height: 18px;
+  padding: 0px;
+  padding-left: 10px;
+  margin: 0px;
+  padding-right: 10px;
+  border: 0px;
+  color: #636b6f;
+  outline: none;
+  letter-spacing: 1px; }
+#site-category #site-category-content #search-article form input[type="submit"] {
+  border: 0px;
+  border-left: 1px solid #ddd;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: normal;
+  color: #636b6f;
+  outline: none; }
 
 #site-category-box-fill {
   height: 80px;
@@ -76,24 +76,24 @@ body {
   margin: 0px auto;
   border: 1px solid #ddd;
   position: relative; }
-  #article a {
-    text-decoration: none; }
-  #article #article-category-button {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    text-align: center;
-    width: 20px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    padding-right: 6px;
-    border: 1px solid #ddd;
-    border-left: 0px; }
-    #article #article-category-button a {
-      writing-mode: vertical-lr;
-      color: #706b6e;
-      font-size: 16px;
-      text-decoration: none; }
+#article a {
+  text-decoration: none; }
+#article #article-category-button {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-align: center;
+  width: 20px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  border: 1px solid #ddd;
+  border-left: 0px; }
+#article #article-category-button a {
+  writing-mode: vertical-lr;
+  color: #706b6e;
+  font-size: 16px;
+  text-decoration: none; }
 
 #article-content {
   background-color: white;
@@ -105,79 +105,71 @@ body {
   letter-spacing: 1px;
   min-height: 1000px;
   font-family: "ubuntu"; }
-  #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
-    display: block;
-    font-weight: 400;
-    font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
-    color: #2c3e50; }
-  #article-content h1 {
-    font-size: 24px;
-    color: black;
-    text-align: center; }
-  #article-content h2 {
-    font-size: 20px;
-    margin: 20px 0px 5px 0px;
-    margin-top: 40px; }
-  #article-content h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 22px; }
-  #article-content h4 {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 22px; }
-  #article-content h5 {
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 22px; }
-  #article-content a {
-    color: #00a5f7; }
-  #article-content pre {
-    margin: 0px 20px;
-    background-color: #f8f8f8;
-    padding: 10px;
-    overflow: auto;
-    border-radius: 5px; }
-    #article-content pre code {
-      width: 100%;
-      font-family: Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
-      line-height: 1.5;
-      font-size: 13px;
-      letter-spacing: 0px; }
-  #article-content ol {
-    font-size: 14px; }
-  #article-content li {
-    margin-top: 7px;
-    margin-bottom: 3px; }
-  #article-content p {
-    line-height: 1.5;
-    text-align: justify;
-    margin: 0px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #706b6e;
-    font-family: "Monaco","Ubuntu mono"; }
-    #article-content p code {
-      border-radius: 4px;
-      font-size: 13px;
-      padding: 2px;
-      font-family: "Monaco","Ubuntu mono"; }
-  #article-content img {
-    display: inline-block; }
-  #article-content span.search_key {
-    color: #e810aa; }
-  #article-content table {
-    margin-bottom: 10px; }
-    #article-content table thead {
-      background-color: #ddd; }
-    #article-content table th {
-      font-size: 16px; }
-    #article-content table th, #article-content table td {
-      padding: 5px 10px;
-      border: 1px solid #eee; }
+#article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
+  display: block;
+  font-weight: 400;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
+  color: #2c3e50; }
+#article-content h1 {
+  font-size: 24px;
+  color: black;
+  text-align: center; }
+#article-content h2 {
+  font-size: 20px; }
+#article-content h3 {
+  font-size: 18px; }
+#article-content h4 {
+  font-size: 16px;
+  margin-top: 20px; }
+#article-content h5 {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 5px; }
+#article-content a {
+  color: #00a5f7; }
+#article-content pre {
+  margin: 0px 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 5px; }
+#article-content pre code {
+  width: 100%;
+  font-family: Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
+  line-height: 1.5;
+  font-size: 13px;
+  letter-spacing: 0px; }
+#article-content ol {
+  font-size: 14px; }
+#article-content li {
+  margin-top: 7px;
+  margin-bottom: 3px; }
+#article-content p {
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #706b6e;
+  font-family: "Monaco","Ubuntu mono"; }
+#article-content p code {
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 2px;
+  font-family: "Monaco","Ubuntu mono"; }
+#article-content img {
+  display: inline-block; }
+#article-content span.search_key {
+  color: #e810aa; }
+#article-content table {
+  margin-bottom: 10px; }
+#article-content table thead {
+  background-color: #ddd; }
+#article-content table th {
+  font-size: 16px; }
+#article-content table th, #article-content table td {
+  padding: 5px 10px;
+  border: 1px solid #eee; }
 
 #main_category {
   position: absolute;
@@ -191,59 +183,59 @@ body {
   top: 0px;
   left: 0px;
   width: 300px; }
-  #main_category #main-category-content {
-    width: 300px;
-    overflow: auto;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-bottom: 1px solid #ddd; }
-  #main_category h1, #main_category h2, #main_category h3, #main_category h4, #main_category h5 {
-    font-weight: normal;
-    color: #000415; }
-  #main_category .main-title {
-    margin: 0px 0px;
-    font-family: Monaco;
-    text-align: left;
-    background-color: #636b6f;
-    color: white;
-    position: fixed;
-    top: 0px;
-    left: 0px; }
-    #main_category .main-title h1 {
-      width: 240px;
-      text-align: justify;
-      text-justify: inter-word;
-      letter-spacing: 1px;
-      margin: 0px;
-      padding: 0px;
-      font-size: 20px; }
-  #main_category .head-tag {
-    display: inline-block; }
-  #main_category a {
-    color: #636bfb;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: normal; }
-  #main_category a.active {
-    color: #e83e8c;
-    font-weight: bold; }
-  #main_category ul, #main_category li {
-    text-decoration: none;
-    list-style: none;
-    line-height: 1.5; }
-  #main_category ul {
-    padding-left: 20px;
-    margin: 0px; }
-  #main_category h2 {
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-align: left;
-    font-size: 17px;
-    font-family: "ubuntu mono";
-    margin: 0px; }
-    #main_category h2 .caret {
-      margin-left: 10px; }
+#main_category #main-category-content {
+  width: 300px;
+  overflow: auto;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #ddd; }
+#main_category h1, #main_category h2, #main_category h3, #main_category h4, #main_category h5 {
+  font-weight: normal;
+  color: #000415; }
+#main_category .main-title {
+  margin: 0px 0px;
+  font-family: Monaco;
+  text-align: left;
+  background-color: #636b6f;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px; }
+#main_category .main-title h1 {
+  width: 240px;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px; }
+#main_category .head-tag {
+  display: inline-block; }
+#main_category a {
+  color: #636bfb;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: normal; }
+#main_category a.active {
+  color: #e83e8c;
+  font-weight: bold; }
+#main_category ul, #main_category li {
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5; }
+#main_category ul {
+  padding-left: 20px;
+  margin: 0px; }
+#main_category h2 {
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 17px;
+  font-family: "ubuntu mono";
+  margin: 0px; }
+#main_category h2 .caret {
+  margin-left: 10px; }
 
 #site-footer {
   height: 200px; }
