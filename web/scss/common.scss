@@ -37,7 +37,6 @@ body
             position: absolute;
             bottom: 8px;
             a{
-                color: #636b6f;
                 font-size: 26px;
                 text-decoration: none;
             }
@@ -48,7 +47,6 @@ body
             bottom: 8px;
             left: 244px;
             a{
-                color: #636b6f;
                 font-size: 18px;
                 text-decoration: none;
             }
@@ -226,12 +224,10 @@ body
         color: #706b6e;
         font-family: "Monaco","Ubuntu mono";
         code{
-            // color:#FF6600;
+            color:rgb(146,0,12);
             border-radius: 4px;
             font-size: 13px;
             padding: 2px;
-            // background-color: #fffbc4;
-            // background-color: #fffde2;
             font-family: "Monaco","Ubuntu mono";
         }
     }
@@ -269,7 +265,7 @@ body
     top:0px;
     display: none;
     background-color:$backgroud_color;
-    opacity:0.9;
+    // opacity:0.9;
     z-index:1;
     top:0px;
     left: 0px;
@@ -312,13 +308,12 @@ body
         display:inline-block;
     }
     a{
-        color:#636bfb;
+        color:#666666;
         text-decoration:none;
         font-size:13px;
-        font-weight: normal;
     }
     a.active{
-        color:#e83e8c;
+        color:#990033;
         font-weight: bold;
     }
     ul,li{
@@ -331,11 +326,11 @@ body
         margin: 0px;
     }
     h2{
+        font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
         cursor:pointer;
-        letter-spacing:1px;
+        letter-spacing:2px;
         text-align:left;
         font-size:17px;
-        font-family: "ubuntu mono";
         margin:0px;
         .caret{
             margin-left:10px;

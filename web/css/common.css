@@ -26,7 +26,6 @@ body {
   position: absolute;
   bottom: 8px; }
 #site-category #site-category-content #blog-name a {
-  color: #636b6f;
   font-size: 26px;
   text-decoration: none; }
 #site-category #site-category-content #blog-category-list {
@@ -34,7 +33,6 @@ body {
   bottom: 8px;
   left: 244px; }
 #site-category #site-category-content #blog-category-list a {
-  color: #636b6f;
   font-size: 18px;
   text-decoration: none; }
 #site-category #site-category-content #search-article {
@@ -153,6 +151,7 @@ body {
   color: #706b6e;
   font-family: "Monaco","Ubuntu mono"; }
 #article-content p code {
+  color: #92000c;
   border-radius: 4px;
   font-size: 13px;
   padding: 2px;
@@ -178,7 +177,6 @@ body {
   top: 0px;
   display: none;
   background-color: white;
-  opacity: 0.9;
   z-index: 1;
   top: 0px;
   left: 0px;
@@ -213,12 +211,11 @@ body {
 #main_category .head-tag {
   display: inline-block; }
 #main_category a {
-  color: #636bfb;
+  color: #666666;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: normal; }
+  font-size: 13px; }
 #main_category a.active {
-  color: #e83e8c;
+  color: #990033;
   font-weight: bold; }
 #main_category ul, #main_category li {
   text-decoration: none;
@@ -228,11 +225,11 @@ body {
   padding-left: 20px;
   margin: 0px; }
 #main_category h2 {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: left;
   font-size: 17px;
-  font-family: "ubuntu mono";
   margin: 0px; }
 #main_category h2 .caret {
   margin-left: 10px; }
