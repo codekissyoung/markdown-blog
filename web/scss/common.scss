@@ -19,6 +19,12 @@ body
 
 #site-category
 {
+    a:active{
+        color:black;
+    } 
+    a{
+        color:black;
+    }
     background: $backgroud_color;
     position: fixed;
     z-index: 1;

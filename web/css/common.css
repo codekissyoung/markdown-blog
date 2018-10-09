@@ -17,6 +17,10 @@ body {
   width: 100%;
   height: 70px;
   box-shadow: 0 1px 5px grey; }
+#site-category a:active {
+  color: black; }
+#site-category a {
+  color: black; }
 #site-category #site-category-content {
   width: 1020px;
   margin: 0px auto;
