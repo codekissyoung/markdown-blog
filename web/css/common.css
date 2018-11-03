@@ -114,8 +114,9 @@ body {
   color: #2c3e50; }
 #article-content h1 {
   font-size: 24px;
-  color: black;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 0px;
+  letter-spacing: 3px; }
 #article-content h2 {
   font-size: 20px; }
 #article-content h3 {

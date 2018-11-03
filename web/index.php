@@ -37,12 +37,10 @@ if( $search_key )
             $value          = htmlentities( $ret[1] );
             $value          = str_ireplace( $search_key ,'<span class=search_key>'.$search_key.'</span>', $value );
             $li             = $li."<li class=search-list> $value </li>";
-
             if( $last_search_article != $href )
             {
                 $html  = $html."<h2><a href='$protocol$host/$href'>$href</a></h2>";
                 $html  = $html."<lu>".$li."</ul>";
-
                 $li = "";
                 $last_search_article = $href;
             }
