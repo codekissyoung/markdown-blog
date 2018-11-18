@@ -28,6 +28,9 @@ if( $search_key )
     $last_search_article = "";
     $li = "";
     exec( "grep -ir --exclude-dir='.git' \"$search_key\" ".MD_ROOT." | grep -v \`\`\`", $ret_arr, $ret_code );
+
+    
+    
     if( !empty($ret_arr) )
     {
         foreach( $ret_arr as $key => $value )
