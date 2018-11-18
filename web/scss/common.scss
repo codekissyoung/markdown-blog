@@ -126,6 +126,7 @@ body
     width: $article_width;
     margin:0px auto;
     border: 1px solid #ddd;
+    overflow:hidden;
     position: relative;
     a{
         text-decoration: none;

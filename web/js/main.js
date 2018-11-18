@@ -86,14 +86,12 @@ $(function(){
         var top = topp + 20;
         $("#article-category-button").css("top",top + "px");
 
-        /*
         // 目录 div 本身的变化
         var div_top = topp;
         // 为了解决在移动超过 10px 时， 目录 div 没有对其顶部的 bug
         if( topp >= 10 )
             div_top = topp - 10;
         $("#main_category").css("top",div_top + "px");
-        */
     });
 
     // markdown生成的所有a链接全在新标签页打开 
