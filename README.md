@@ -29,3 +29,4 @@ $IGNORE_FILE = ["link","default","xxx_dir/xxx_dir/file_name"];
 ## 案例
 
 - [Codekissyoung Blog](https://blog.codekissyoung.com/)
+- [Cool Blog](http://zj0395.com/)
