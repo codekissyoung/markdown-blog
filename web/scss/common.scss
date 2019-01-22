@@ -10,7 +10,6 @@ $article_width: 1020px;
 $backgroud_color:white;
 $border_line_color:grey;
 
-
 body
 {
     background: rgb(243,243,243);
@@ -19,6 +18,7 @@ body
 
 #site-category
 {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     a:active{
         color:black;
     } 
@@ -45,6 +45,9 @@ body
             a{
                 font-size: 26px;
                 text-decoration: none;
+                font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
+                font-weight:bold;
+                color:#666666;
             }
         }
         #blog-category-list
@@ -106,8 +109,6 @@ body
             }
         }
     }
-
-
 }
 
 #site-category-box-fill
@@ -167,15 +168,18 @@ body
     font-family: "ubuntu";
     h1,h2,h3,h4,h5{
         display: block;
-        font-weight: 400;
-        font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
-        color:rgb(44, 62, 80);
+        // font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
+        // color:rgb(44, 62, 80);
+        color:#666666;
+
     }
     h1{
-        font-size:24px;
+        font-size:26px;
         text-align:center;
         border-bottom:0px;
         letter-spacing:3px; 
+        padding-top:30px;
     }
     h2{
         font-size:20px;
@@ -195,7 +199,7 @@ body
         // margin-left: 22px;
     }
     h5{
-        font-size:14px;
+        font-size:16px;
         margin-top: 20px;
         margin-bottom: 5px;
         // margin-left: 22px;
@@ -218,7 +222,7 @@ body
         }
     }
     ol{
-      font-size: 14px;
+      font-size: 15px;
     }
     li{
         margin-top:7px;
@@ -228,8 +232,8 @@ body
         line-height:1.5;
         text-align:justify;
         margin:0px;
-        font-size:14px;
-        letter-spacing: 1px;
+        font-size:15px;
+        letter-spacing: 2px;
         color: #706b6e;
         font-family: "Monaco","Ubuntu mono";
         code{
@@ -241,7 +245,6 @@ body
         }
     }
     img{
-        display: inline-block;
     }
     span.search_key{
         color:#e810aa;
@@ -268,6 +271,7 @@ body
 
 #main_category
 {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     position: absolute;
     border-right: 1px solid #ddd;
     left: 0px;
@@ -319,7 +323,9 @@ body
     a{
         color:#666666;
         text-decoration:none;
-        font-size:13px;
+        font-size:15px;
+        letter-spacing:2px;
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     }
     a.active{
         color:#990033;
@@ -335,11 +341,13 @@ body
         margin: 0px;
     }
     h2{
-        font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
+        // font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
         cursor:pointer;
         letter-spacing:2px;
         text-align:left;
-        font-size:17px;
+        font-size:18px;
+        color:#666666;
+        font-weight:bold;
         margin:0px;
         .caret{
             margin-left:10px;
