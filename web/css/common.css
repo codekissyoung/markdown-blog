@@ -109,6 +109,7 @@ body {
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   letter-spacing: 1px;
   min-height: 1000px;
@@ -159,7 +160,6 @@ body {
   margin: 0px;
   font-size: 15px;
   letter-spacing: 2px;
-  color: #706b6e;
   font-family: "Monaco","Ubuntu mono"; }
 #article-content p code {
   color: #92000c;
@@ -167,6 +167,11 @@ body {
   font-size: 13px;
   padding: 2px;
   font-family: "Monaco","Ubuntu mono"; }
+#article-content img {
+  display: block;
+  margin: 10px auto;
+  box-shadow: 0 0 10px #555;
+  border-radius: 6px; }
 #article-content span.search_key {
   color: #e810aa; }
 #article-content table {
