@@ -154,12 +154,17 @@ body {
 #article-content li {
   margin-top: 7px;
   margin-bottom: 3px; }
+#article-content li p {
+  text-indent: 0em;
+  padding: 0px; }
 #article-content p {
-  line-height: 1.5;
+  line-height: 1.8;
   text-align: justify;
   margin: 0px;
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  padding-bottom: 16px;
+  text-indent: 2em;
   font-family: "Monaco","Ubuntu mono"; }
 #article-content p code {
   color: #92000c;

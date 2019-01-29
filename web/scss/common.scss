@@ -228,13 +228,19 @@ body
     li{
         margin-top:7px;
         margin-bottom:3px;
+        p{
+            text-indent:0em;
+            padding:0px;
+        }
     }
     p{
-        line-height:1.5;
+        line-height:1.8;
         text-align:justify;
         margin:0px;
         font-size:15px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        padding-bottom:16px;
+        text-indent:2em;
 //        color: #706b6e;
         font-family: "Monaco","Ubuntu mono";
         code{
