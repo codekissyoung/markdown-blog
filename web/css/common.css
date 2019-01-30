@@ -52,11 +52,11 @@ body {
   border: 1px solid #ddd; }
 #site-category #site-category-content #search-article form input[type="text"] {
   width: 180px;
-  height: 18px;
+  height: 20px;
   padding: 0px;
-  padding-left: 10px;
+  padding-left: 4px;
   margin: 0px;
-  padding-right: 10px;
+  padding-right: 4px;
   border: 0px;
   color: #636b6f;
   outline: none;
