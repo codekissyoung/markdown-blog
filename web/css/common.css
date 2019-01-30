@@ -129,10 +129,10 @@ body {
 #article-content h3 {
   font-size: 18px; }
 #article-content h4 {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 20px; }
 #article-content h5 {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 20px;
   margin-bottom: 5px; }
 #article-content a {
@@ -161,7 +161,7 @@ body {
   line-height: 1.8;
   text-align: justify;
   margin: 0px;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 1px;
   padding-bottom: 16px;
   text-indent: 2em;
@@ -169,7 +169,7 @@ body {
 #article-content p code {
   color: #92000c;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 15px;
   padding: 2px;
   font-family: "Monaco","Ubuntu mono"; }
 #article-content img {
