@@ -157,6 +157,11 @@ body {
 #article-content li p {
   text-indent: 0em;
   padding: 0px; }
+#article-content blockquote {
+  background: #F0F0F0; }
+#article-content blockquote p {
+  padding: 5px 0px;
+  text-indent: 0em; }
 #article-content p {
   line-height: 1.8;
   text-align: justify;
