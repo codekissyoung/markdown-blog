@@ -209,7 +209,8 @@ body
         color: #00a5f7;
     }
     pre{
-        margin: 0px 20px;
+        margin: 0px 32px;
+        margin-bottom:16px;
         background-color:rgb(248, 248, 248);
         padding:10px;
         overflow:auto;
@@ -221,7 +222,6 @@ body
             font-size: 13px;
             letter-spacing:0px;
         }
-        margin-bottom:16px;
     }
     ol{
       font-size: 15px;
@@ -235,6 +235,7 @@ body
         }
     }
     blockquote{
+        margin: 0px 32px;
         background:#F0F0F0;
         p{
             padding:5px 0px;

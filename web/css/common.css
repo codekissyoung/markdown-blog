@@ -138,12 +138,12 @@ body {
 #article-content a {
   color: #00a5f7; }
 #article-content pre {
-  margin: 0px 20px;
+  margin: 0px 32px;
+  margin-bottom: 16px;
   background-color: #f8f8f8;
   padding: 10px;
   overflow: auto;
-  border-radius: 5px;
-  margin-bottom: 16px; }
+  border-radius: 5px; }
 #article-content pre code {
   width: 100%;
   font-family: Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
@@ -159,6 +159,7 @@ body {
   text-indent: 0em;
   padding: 0px; }
 #article-content blockquote {
+  margin: 0px 32px;
   background: #F0F0F0; }
 #article-content blockquote p {
   padding: 5px 0px;
