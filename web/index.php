@@ -54,7 +54,7 @@ if( $search_key )
 }
 
 // 视图
-if( isset($_GET['ajax']) )
+if( isset( $_GET['ajax'] ) )
     include_once 'view/article.php';
 else
 {
