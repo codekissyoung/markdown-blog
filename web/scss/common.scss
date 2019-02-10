@@ -14,11 +14,11 @@ body
 {
     background: rgb(243,243,243);
     margin-top: -20px;
+    font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
 }
 
 #site-category
 {
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     a:active{
         color:black;
     } 
@@ -45,7 +45,6 @@ body
             a{
                 font-size: 26px;
                 text-decoration: none;
-                font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
                 font-weight:bold;
                 color:#666666;
             }
@@ -62,11 +61,9 @@ body
         }
         #search-article
         {
-            // color:black;
             position: absolute;
             right: 0px;
             bottom: 10px;
-            // width:240px;
             form{
                 text-align:left;
                 border:1px solid #ddd;
@@ -74,14 +71,11 @@ body
                 input[type="text"]{
                     width:180px;
                     height: 20px;
-                    // padding:2px 0px;
                     padding: 0px;
                     padding-left:4px;
                     margin: 0px;
                     padding-right: 4px;
                     border:0px;
-                    // border-top-left-radius: 10px;
-                    // border-bottom-left-radius: 10px;
                     color: #636b6f;
                     // vertical-align:middle;
                     outline: none;
@@ -166,14 +160,11 @@ body
     box-sizing:border-box;
     letter-spacing:1px;
     min-height:1000px;
-    font-family: "ubuntu";
+    font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
     h1,h2,h3,h4,h5{
         display: block;
-        // font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
-        font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
-        // color:rgb(44, 62, 80);
         color:#666666;
-
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     }
     h1{
         font-size:26px;
@@ -184,26 +175,18 @@ body
     }
     h2{
         font-size:20px;
-        // margin:20px 0px 5px 0px;
-        // margin-top: 40px;
     }
     h3{
         font-size:18px;
-        // margin-top: 20px;
-        // margin-bottom: 5px;
-        // margin-left: 22px;
     }
     h4{
         font-size:18px;
         margin-top: 20px;
-        // margin-bottom: 5px;
-        // margin-left: 22px;
     }
     h5{
         font-size:18px;
         margin-top: 20px;
         margin-bottom: 5px;
-        // margin-left: 22px;
     }
     a{
         color: #00a5f7;
@@ -217,18 +200,17 @@ body
         border-radius:5px;
         code{
             width:100%;
-            font-family: Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
+            font-family: "Consolas", Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
             line-height: 1.5;
-            font-size: 13px;
+            font-size: 16px;
             letter-spacing:0px;
         }
     }
-    ol{
+    ol,ul{
       font-size: 15px;
+      margin-left:1.5em;
     }
     li{
-        margin-top:7px;
-        margin-bottom:3px;
         p{
             text-indent:0em;
             padding:0px;
@@ -236,6 +218,7 @@ body
     }
     blockquote{
         margin: 0px 32px;
+        margin-bottom:16px;
         background:#F0F0F0;
         p{
             padding:5px 0px;
@@ -250,13 +233,12 @@ body
         letter-spacing: 1px;
         padding-bottom:16px;
         text-indent:2em;
-        font-family: "Monaco","Ubuntu mono";
         code{
             color:rgb(146,0,12);
             border-radius: 4px;
             font-size: 15px;
             padding: 2px;
-            font-family: "Monaco","Ubuntu mono";
+            font-family: Monaco, "Ubuntu mono","微软雅黑", Menlo, Consolas, "Courier New", monospace;
         }
     }
     img{
@@ -290,7 +272,6 @@ body
 
 #main_category
 {
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     position: absolute;
     border-right: 1px solid #ddd;
     left: 0px;
@@ -344,7 +325,6 @@ body
         text-decoration:none;
         font-size:15px;
         letter-spacing:2px;
-        font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
     }
     a.active{
         color:#990033;
@@ -360,7 +340,6 @@ body
         margin: 0px;
     }
     h2{
-        // font-family:"PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif,"文泉驿",Georgia;
         cursor:pointer;
         letter-spacing:2px;
         text-align:left;
