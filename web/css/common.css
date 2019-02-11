@@ -62,12 +62,14 @@ body {
   letter-spacing: 1px; }
 #site-category #site-category-content #search-article form input[type="submit"] {
   border: 0px;
-  border-left: 1px solid #ddd;
   padding-top: 2px;
   padding-bottom: 2px;
   font-weight: normal;
   color: #636b6f;
-  outline: none; }
+  outline: none;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  background-color: white; }
 
 #site-category-box-fill {
   height: 80px;
@@ -93,7 +95,7 @@ body {
   padding-top: 6px;
   padding-bottom: 4px;
   padding-right: 2px;
-  padding-left: 3px;
+  padding-left: 2px;
   border: 1px solid #ddd;
   border-left: 0px; }
 #article #article-category-button a {

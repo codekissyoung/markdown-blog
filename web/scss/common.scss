@@ -5,8 +5,8 @@
 .show{
     display: block;
 }
+
 $article_width: 1020px;
-// $backgroud_color:#f5f5d5;
 $backgroud_color:white;
 $border_line_color:grey;
 
@@ -67,7 +67,6 @@ body
             form{
                 text-align:left;
                 border:1px solid #ddd;
-                // border-radius: 10px;
                 input[type="text"]{
                     width:180px;
                     height: 20px;
@@ -77,28 +76,20 @@ body
                     padding-right: 4px;
                     border:0px;
                     color: #636b6f;
-                    // vertical-align:middle;
                     outline: none;
                     letter-spacing: 1px;
                 }
                 input[type="submit"]
                 {
                     border:0px;
-                    border-left: 1px solid #ddd;
-                    // cursor:pointer;
                     padding-top:2px;
                     padding-bottom:2px;
-                    // border-top-right-radius: 10px;
-                    // border-bottom-right-radius: 10px;
                     font-weight:normal;
-                    // border:1px solid #dcdcdc;
-                    // text-decoration:none;
                     color:#636b6f;
-                    // display:inline-block;
-                    // text-shadow:1px 1px 0px #ffffff;
-                    // box-shadow:inset 1px 1px 0px 0px #ffffff;
-                    // box-shadow:1px 0px 13px -1px #ffffff;
                     outline: none;
+					border-left:1px solid #ddd;
+					cursor:pointer;
+					background-color:white;
                 }
             }
         }
@@ -136,7 +127,7 @@ body
         padding-top: 6px;
         padding-bottom: 4px;
         padding-right: 2px;
-        padding-left: 3px;
+        padding-left: 2px;
         // background-color: #fffbbb;
         border: 1px solid #ddd;
         border-left: 0px;
