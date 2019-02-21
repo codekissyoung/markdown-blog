@@ -128,7 +128,6 @@ body
         padding-bottom: 4px;
         padding-right: 2px;
         padding-left: 2px;
-        // background-color: #fffbbb;
         border: 1px solid #ddd;
         border-left: 0px;
         a{
@@ -187,8 +186,7 @@ body
         color: #00a5f7;
     }
     pre{
-        margin: 0px 32px;
-        margin-bottom:16px;
+        margin: 16px 32px;
         background-color:rgb(248, 248, 248);
         padding:10px;
         overflow:auto;
@@ -206,11 +204,15 @@ body
 		margin-left:1.5em;
 		margin:0px 32px;
     }
+
     li{
         p{
             text-indent:0em;
             padding:0px;
         }
+		ol,ul{
+			margin-left:0em;
+		}
     }
     blockquote{
         margin: 0px 32px;

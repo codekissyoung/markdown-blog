@@ -142,8 +142,7 @@ body {
 #article-content a {
   color: #00a5f7; }
 #article-content pre {
-  margin: 0px 32px;
-  margin-bottom: 16px;
+  margin: 16px 32px;
   background-color: #f8f8f8;
   padding: 10px;
   overflow: auto;
@@ -161,6 +160,8 @@ body {
 #article-content li p {
   text-indent: 0em;
   padding: 0px; }
+#article-content li ol, #article-content li ul {
+  margin-left: 0em; }
 #article-content blockquote {
   margin: 0px 32px;
   margin-bottom: 16px;
