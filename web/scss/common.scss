@@ -167,6 +167,10 @@ body
     h2{
         font-size:20px;
     }
+	h3,h4,h5{
+		text-indent:2em;
+		color:#406d91;
+	}
     h3{
         font-size:18px;
     }
@@ -198,8 +202,9 @@ body
         }
     }
     ol,ul{
-      font-size: 15px;
-      margin-left:1.5em;
+		font-size: 15px;
+		margin-left:1.5em;
+		margin:0px 32px;
     }
     li{
         p{

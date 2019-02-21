@@ -127,6 +127,9 @@ body {
   padding-top: 30px; }
 #article-content h2 {
   font-size: 20px; }
+#article-content h3, #article-content h4, #article-content h5 {
+  text-indent: 2em;
+  color: #406d91; }
 #article-content h3 {
   font-size: 18px; }
 #article-content h4 {
@@ -153,7 +156,8 @@ body {
   letter-spacing: 0px; }
 #article-content ol, #article-content ul {
   font-size: 15px;
-  margin-left: 1.5em; }
+  margin-left: 1.5em;
+  margin: 0px 32px; }
 #article-content li p {
   text-indent: 0em;
   padding: 0px; }
