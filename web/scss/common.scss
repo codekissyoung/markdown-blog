@@ -169,6 +169,8 @@ body
 	h3,h4,h5{
 		text-indent:2em;
 		color:#406d91;
+		margin-top:10px;
+		margin-bottom:10px;
 	}
     h3{
         font-size:18px;
@@ -236,6 +238,8 @@ body
             border-radius: 4px;
             font-size: 15px;
             padding: 2px;
+			margin-left:2px;
+			margin-right:2px;
             font-family: Monaco, "Ubuntu mono","微软雅黑", Menlo, Consolas, "Courier New", monospace;
         }
     }
