@@ -172,12 +172,12 @@ body {
       padding: 5px 0px;
       text-indent: 0em; }
   #article-content p {
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: justify;
     margin: 0px;
     font-size: 17px;
     letter-spacing: 1px;
-    padding-bottom: 16px;
+    padding: 7px 0px;
     text-indent: 2em; }
     #article-content p code {
       color: #92000c;
