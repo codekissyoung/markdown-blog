@@ -128,7 +128,8 @@ body {
     letter-spacing: 3px;
     padding-top: 30px; }
   #article-content h2 {
-    font-size: 20px; }
+    font-size: 20px;
+    cursor: pointer; }
   #article-content h3, #article-content h4, #article-content h5 {
     text-indent: 2em;
     color: #406d91;
@@ -169,13 +170,14 @@ body {
   #article-content blockquote {
     margin: 0px 32px;
     margin-bottom: 16px;
-    padding: 5px 0px;
+    padding: 8px 0px;
     background: #F0F0F0; }
     #article-content blockquote p {
       font-size: 15px;
       padding: 3px 0px;
       text-indent: 0em;
-      line-height: 1.5; }
+      line-height: 1.5;
+      padding: 0px 16px; }
     #article-content blockquote ul {
       margin: 0px; }
       #article-content blockquote ul li {

@@ -51,6 +51,21 @@ $(function(){
                 var newUrl = href;
                 history.pushState({},title,newUrl);
                 set_category_height();
+				
+				/*
+				 * 动态加载的文章，里面的事件绑定这里重新做了一遍，这样不好
+				 * 网上有为动态加载的DOM绑定事件的方法
+				 * @todo 下次有空研究JS的时候改造下
+				 * */
+
+				// markdown生成的所有a链接全在新标签页打开 
+				$("#article-content a").attr("target","_blank");
+
+				// 点击h2标签后，与下一个h2标签中间的内容收起来
+				$("#article-content h2").on("click",function(){
+					$(this).nextUntil("h2").toggle();
+				});
+
             }
         });
         return false; // 阻止冒泡 阻止事件
@@ -96,4 +111,10 @@ $(function(){
 
     // markdown生成的所有a链接全在新标签页打开 
     $("#article-content a").attr("target","_blank");
+
+	// 点击h2标签后，与下一个h2标签中间的内容收起来
+	$("#article-content h2").on("click",function(){
+		$(this).nextUntil("h2").toggle();
+	});
+
 });

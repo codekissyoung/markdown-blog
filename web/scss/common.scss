@@ -169,6 +169,7 @@ body
     }
     h2{
         font-size:20px;
+		cursor:pointer;
     }
 	h3,h4,h5{
 		text-indent:2em;
@@ -223,13 +224,14 @@ body
     blockquote{
         margin: 0px 32px;
         margin-bottom:16px;
-		padding:5px 0px;
+		padding:8px 0px;
         background:#F0F0F0;
         p{
 			font-size:15px;
             padding:3px 0px;
             text-indent:0em;
 			line-height:1.5;
+			padding:0px 16px;
         }
 		ul{
 			margin:0px;
