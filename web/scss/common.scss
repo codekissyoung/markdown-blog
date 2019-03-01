@@ -207,7 +207,7 @@ body
     }
     ol,ul{
 		font-size: 15px;
-		margin-left:1.5em;
+		margin-left:1.4em;
 		margin:0px 32px;
     }
 
@@ -223,11 +223,20 @@ body
     blockquote{
         margin: 0px 32px;
         margin-bottom:16px;
+		padding:5px 0px;
         background:#F0F0F0;
         p{
-            padding:5px 0px;
+			font-size:15px;
+            padding:3px 0px;
             text-indent:0em;
+			line-height:1.5;
         }
+		ul{
+			margin:0px;
+			li{
+				margin:0px;
+			}
+		}
     }
     p{
         line-height:1.7;

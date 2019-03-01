@@ -159,7 +159,7 @@ body {
       letter-spacing: 0px; }
   #article-content ol, #article-content ul {
     font-size: 15px;
-    margin-left: 1.5em;
+    margin-left: 1.4em;
     margin: 0px 32px; }
   #article-content li p {
     text-indent: 0em;
@@ -169,10 +169,17 @@ body {
   #article-content blockquote {
     margin: 0px 32px;
     margin-bottom: 16px;
+    padding: 5px 0px;
     background: #F0F0F0; }
     #article-content blockquote p {
-      padding: 5px 0px;
-      text-indent: 0em; }
+      font-size: 15px;
+      padding: 3px 0px;
+      text-indent: 0em;
+      line-height: 1.5; }
+    #article-content blockquote ul {
+      margin: 0px; }
+      #article-content blockquote ul li {
+        margin: 0px; }
   #article-content p {
     line-height: 1.7;
     text-align: justify;
