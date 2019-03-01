@@ -30,4 +30,3 @@
                 </div>
             </div>
         </div>
-        <div id="site-category-box-fill"></div>
