@@ -146,8 +146,8 @@ body
     background-color: $backgroud_color;
     top: 0px;
     padding:20px;
-    padding-left:40px;
-    padding-right:40px;
+    padding-left:60px;
+    padding-right:60px;
     padding-bottom:100px;
     box-sizing:border-box;
     letter-spacing:1px;
@@ -228,7 +228,7 @@ body
         }
     }
     p{
-        line-height:1.6;
+        line-height:1.7;
         text-align:justify;
         margin:0px;
         font-size:16px;
@@ -287,12 +287,25 @@ body
     top:0px;
     left: 0px;
     width: 300px;
+	#main-category-title{
+		height:40px;
+		margin-top:30px;
+		margin-bottom:30px;
+		
+		h2{
+			letter-spacing:10px;
+			text-align:center;	
+			font-size:34px;
+        	font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
+			//margin-top:50px;
+		}
+	}
     #main-category-content{
         width:300px;
         overflow:auto;
         height: 100%;
-        padding-top:100px;
-        padding-bottom: 100px;
+        #padding-top:100px;
+        padding-bottom: 200px;
         border-bottom: 1px solid #ddd;
     }
     h1,h2,h3,h4,h5{
@@ -342,7 +355,7 @@ body
 		font-size:17px;
     }
     ul{
-        padding-left:20px;
+        padding-left:30px;
         margin: 0px;
     }
     h2{
