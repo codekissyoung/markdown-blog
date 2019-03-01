@@ -162,6 +162,8 @@ body {
     font-size: 15px;
     margin-left: 1.4em;
     margin: 0px 32px; }
+  #article-content ul.search-list-ul {
+    margin: 0px; }
   #article-content li p {
     text-indent: 0em;
     padding: 0px; }

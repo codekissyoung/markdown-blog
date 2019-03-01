@@ -24,27 +24,26 @@ $html    = $parser -> makeHtml( $content );
 $search_key = isset($_GET['search_key']) ? $_GET['search_key'] : '';
 if( $search_key )
 {
-    $html = "";
-    $last_search_article = "";
-    $li = "";
+    $html 	   = "";
+    $last_h2   = "";
+    $li_list   = "";
     exec( "grep -ir --include *.md --exclude-dir='.git' \"$search_key\" ".MD_ROOT." | grep -v \`\`\`", $ret_arr, $ret_code );
-    
     if( !empty($ret_arr) )
     {
         foreach( $ret_arr as $key => $value )
         {
             $ret            = explode(".md:",$value);
             $href           = str_replace(MD_ROOT,"",$ret[0]);
-            $value          = htmlentities( $ret[1] );
-            $value          = str_ireplace( $search_key ,'<span class=search_key>'.$search_key.'</span>', $value );
-            $li             = $li."<li class=search-list> $value </li>";
-            if( $last_search_article != $href )
-            {
-                $html  = $html."<h2><a href='$protocol$host/$href'>$href</a></h2>";
-                $html  = $html."<lu>".$li."</ul>";
-                $li = "";
-                $last_search_article = $href;
-            }
+            $value          = str_ireplace( $search_key ,'<span class=search_key>'.$search_key.'</span>', htmlentities( $ret[1] ) );
+            $li 			= "<li class=search-list> $value </li>";
+			$h2             = "<h2><a href='$protocol$host/$href'>$href</a></h2>";
+			$li_list 	   .= $li;
+
+			if( $h2 != $last_h2 )
+				$html   .= $h2;
+
+			$last_h2 = $h2;
+			$html .= $li;
         }
     }
     else
