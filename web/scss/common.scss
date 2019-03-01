@@ -10,6 +10,8 @@ $article_width: 1020px;
 $backgroud_color:white;
 $border_line_color:grey;
 
+$title-font-family:"Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
+
 body
 {
     background: rgb(243,243,243);
@@ -150,7 +152,7 @@ body
     box-sizing:border-box;
     letter-spacing:1px;
     min-height:1000px;
-    font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
     h1,h2,h3,h4,h5{
         display: block;
         color:#666666;
@@ -229,7 +231,7 @@ body
         line-height:1.6;
         text-align:justify;
         margin:0px;
-        font-size:17px;
+        font-size:16px;
         letter-spacing: 1px;
         padding:7px 0px;
         text-indent:2em;
@@ -240,7 +242,7 @@ body
             padding: 2px;
 			margin-left:2px;
 			margin-right:2px;
-            font-family: Monaco, "Ubuntu mono","微软雅黑", Menlo, Consolas, "Courier New", monospace;
+            font-family: Monaco, "Ubuntu mono", Menlo, Consolas,"微软雅黑", "Courier New", monospace;
         }
     }
     img{
@@ -336,6 +338,8 @@ body
         text-decoration:none;
         list-style:none;
         line-height:1.5;
+		font-family:$title-font-family;
+		font-size:17px;
     }
     ul{
         padding-left:20px;
