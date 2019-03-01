@@ -272,6 +272,8 @@ body {
   #main_category ul {
     padding-left: 30px;
     margin: 0px; }
+  #main_category li {
+    margin: 3px 0px; }
   #main_category h2 {
     cursor: pointer;
     letter-spacing: 2px;
