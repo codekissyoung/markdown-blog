@@ -273,7 +273,8 @@ body
     }
     table
     {
-        margin-bottom:10px;
+		display:table;
+		margin:10px auto;
         thead
         {
             background-color:#ddd;

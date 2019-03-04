@@ -208,7 +208,8 @@ body {
   #article-content span.search_key {
     color: #e810aa; }
   #article-content table {
-    margin-bottom: 10px; }
+    display: table;
+    margin: 10px auto; }
     #article-content table thead {
       background-color: #ddd; }
     #article-content table th {
