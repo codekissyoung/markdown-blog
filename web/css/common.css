@@ -40,9 +40,17 @@ body {
       position: absolute;
       bottom: 8px;
       left: 244px; }
-      #site-category #site-category-content #blog-category-list a {
-        font-size: 18px;
-        text-decoration: none; }
+      #site-category #site-category-content #blog-category-list ul {
+        width: auto;
+        list-style: none; }
+        #site-category #site-category-content #blog-category-list ul li {
+          padding: 0px 6px;
+          padding-bottom: 2px;
+          float: left; }
+          #site-category #site-category-content #blog-category-list ul li a {
+            color: #666666;
+            font-size: 16px;
+            text-decoration: none; }
     #site-category #site-category-content #search-article {
       position: absolute;
       right: 0px;
@@ -144,6 +152,11 @@ body {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 5px; }
+  #article-content .article-create-time {
+    font-size: 13px;
+    font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-weight: 200;
+    color: #999; }
   #article-content a {
     color: #00a5f7; }
   #article-content pre {

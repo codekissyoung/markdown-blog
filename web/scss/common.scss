@@ -57,10 +57,20 @@ body
             position: absolute;
             bottom: 8px;
             left: 244px;
-            a{
-                font-size: 18px;
-                text-decoration: none;
-            }
+			ul{
+				width:auto;
+				list-style:none;
+				li{
+					padding:0px 6px;
+					padding-bottom:2px;
+					float:left;
+					a{
+						color:#666666;
+						font-size: 16px;
+						text-decoration: none;
+					}
+				}
+			}
         }
         #search-article
         {
@@ -121,6 +131,8 @@ body
     a{
         text-decoration: none;
     }
+
+		
     #article-category-button
     {
         position: absolute;
@@ -189,6 +201,12 @@ body
         margin-top: 20px;
         margin-bottom: 5px;
     }
+	.article-create-time{
+		font-size:13px;
+    	font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+		font-weight:200;
+		color:#999;
+	}
     a{
         color: #00a5f7;
     }

@@ -20,7 +20,15 @@
                     <a href="/"><?=BLOG_TITLE?></a>
                 </div>
                 <div id="blog-category-list">
-                    <!-- <a href="/img.php">图片库</a> -->
+					<?php if(isset($BLOG_CATEGORY_LINK) && !empty($BLOG_CATEGORY_LINK) ): ?>
+					<ul>
+						<?php foreach( $BLOG_CATEGORY_LINK as $link ): ?>
+						<li>
+							<a href="<?=$link['href']?>" ><?=$link['name'] ?></a>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+					<?php endif;?>
                 </div>
                 <div id="search-article">
                     <form action="/" method="GET" autocomplete="off">
