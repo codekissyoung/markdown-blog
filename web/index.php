@@ -15,7 +15,7 @@ $title  = trim(join('-',explode("/",$current_article))."-".BLOG_TITLE,'-');
 // 加载url里路径指明的文章
 if( $current_article )
 {
-    $article = MD_ROOT."{$current_article}.md";
+    $article = MD_ROOT."{$current_article}";
 }
 // 首页加载默认的自定义文章
 elseif( isset( $DEFAULT_ARTICLE ) && !empty( $DEFAULT_ARTICLE ) )
@@ -30,20 +30,35 @@ else
 
 $content = "";
 $html = "";
-if( isset( $article ) && !empty($article) )
+
+
+// 首页
+if( !isset($article) || empty($article) ) 
 {
-	$content = is_file( $article  ) ? file_get_contents( $article ) : "文章不存在";
+	$html .= "<h1>最新文章</h1>";
+	$list_dir = MD_ROOT;
+}
+// 访问目录
+elseif( is_dir( $article ) )
+{
+	$html .= "<h1>文章列表</h1>";
+	$list_dir = $article;
+}
+// 访问某篇文章
+elseif( is_file( $article.".md" ) )
+{
+	$content = file_get_contents( $article.".md" );
 	$html    = $parser -> makeHtml( $content );
 }
-else
+
+if( isset($list_dir) && !empty($list_dir) )
 {
 	$md_file_list = [];
-	$md_file_list = file_list( MD_ROOT, $md_file_list );
+	$md_file_list = file_list( $list_dir, $md_file_list );
 	$md_file_list = sort_file_list( $md_file_list );
-	$html .= "<h1>最新文章</h1>";
 	$i = 0;
 	foreach( $md_file_list as $file )
-	{
+	{/*{{{*/
         $ret       = explode( ".md", $file['path'] );
         $href      = str_replace( MD_ROOT, "", $ret[0] );
 		$paths = explode( "/", $href );
@@ -52,7 +67,7 @@ else
 		$semantic_time = semantic_time( $file['time'] );
 		$html     .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}更新</span></h2>";
 
-		if( $i < 10 )
+		if( $i < 15 )
 		{
 			$content 	    = file_get_contents( $file['path'] );
 			$content_parsed = $parser -> makeHtml( $content );
@@ -64,14 +79,14 @@ else
 				$text = preg_replace( "/<pre>.*/s","", $text );
 			}
 
-
 			if( strlen($text) == 0 )
 				$text = "<p>文章无缩略内容。</p>";
 
 			$html .= $text;
 			$i++;
 		}
-	}
+	}/*}}}*/
+
 }
 
 // 搜索全文
