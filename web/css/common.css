@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 变量定义 */
 /* 通用样式 */
 .hide {
   display: none; }
@@ -6,10 +7,14 @@
 .show {
   display: block; }
 
+/* 重写github-markdown样式 */
+.markdown-body {
+  font-family: "Times New Roman", "STXihei", "Microsoft YaHei";
+  font-weight: normal; }
+
 body {
   background: #f3f3f3;
-  margin-top: -20px;
-  font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif; }
+  margin-top: -20px; }
 
 #site-category {
   background: white;
@@ -123,12 +128,11 @@ body {
   padding-bottom: 100px;
   box-sizing: border-box;
   letter-spacing: 1px;
-  min-height: 1000px;
-  font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif; }
+  min-height: 1000px; }
   #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
     display: block;
     color: #666666;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif; }
+    font-family: "Times New Roman", "STKaiti", "Kaiti"; }
   #article-content h1 {
     font-size: 26px;
     text-align: center;
@@ -154,7 +158,7 @@ body {
     margin-bottom: 5px; }
   #article-content .article-create-time {
     font-size: 13px;
-    font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-family: "Times New Roman", "STXihei", "Microsoft YaHei";
     font-weight: 200;
     color: #999; }
   #article-content a {
@@ -167,7 +171,7 @@ body {
     border-radius: 5px; }
     #article-content pre code {
       width: 100%;
-      font-family: "Consolas", Monaco, "微软雅黑", Menlo, Consolas, "Courier New", monospace;
+      font-family: "consolas", "monaco";
       line-height: 1.5;
       font-size: 15px;
       letter-spacing: 0px; }
@@ -212,7 +216,7 @@ body {
       padding: 2px;
       margin-left: 2px;
       margin-right: 2px;
-      font-family: Monaco, "Ubuntu mono", Menlo, Consolas,"微软雅黑", "Courier New", monospace; }
+      font-family: "consolas", "monaco"; }
   #article-content img {
     display: block;
     margin: 10px auto;
@@ -249,8 +253,7 @@ body {
     #main_category #main-category-title h2 {
       letter-spacing: 10px;
       text-align: center;
-      font-size: 34px;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif; }
+      font-size: 34px; }
   #main_category #main-category-content {
     width: 300px;
     overflow: auto;
@@ -263,7 +266,6 @@ body {
     color: #000415; }
   #main_category .main-title {
     margin: 0px 0px;
-    font-family: Monaco;
     text-align: left;
     background-color: #636b6f;
     color: white;
@@ -292,7 +294,7 @@ body {
     text-decoration: none;
     list-style: none;
     line-height: 1.5;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, "STKaiti", "SimSun", serif;
+    font-family: "Times New Roman", "STKaiti", "Kaiti";
     font-size: 17px; }
   #main_category ul {
     padding-left: 30px;
