@@ -9,7 +9,7 @@
 
 /* 重写github-markdown样式 */
 .markdown-body {
-  font-family: "Arial", "STXihei", "Microsoft YaHei";
+  font-family: "Verdana", "Arial", "STXihei", "Microsoft YaHei";
   font-weight: normal; }
 
 body {
@@ -158,7 +158,7 @@ body {
     margin-bottom: 5px; }
   #article-content .article-create-time {
     font-size: 13px;
-    font-family: "Arial", "STXihei", "Microsoft YaHei";
+    font-family: "Verdana", "Arial", "STXihei", "Microsoft YaHei";
     font-weight: 200;
     color: #999; }
   #article-content a {
@@ -206,7 +206,7 @@ body {
     text-align: justify;
     margin: 0px;
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     padding: 7px 0px;
     text-indent: 2em; }
     #article-content p code {

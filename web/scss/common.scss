@@ -3,21 +3,23 @@ $article_width: 1020px;
 $backgroud_color: white;
 $border_line_color: grey;
 
-
 // 标题字体 衬线体用于标题 装饰性强
-$title-font-family: "Times New Roman",
-					"STKaiti",
-					"Kaiti";
+$title-font-family: 
+					"Times New Roman",
+					"STKaiti", // Mac 楷体
+					"Kaiti";   // Windows 楷体
 
 // 正文字体 无衬线体 字体清晰 用于正文
-$content-font-family: "Arial",
-				      "STXihei",
-					  "Microsoft YaHei";
+$content-font-family: 
+				      "Verdana",
+					  "Arial",
+				      "STXihei", 			// Mac 细黑
+					  "Microsoft YaHei";	// Windows 雅黑
 
 // 编程字体
-$code-font-family: "consolas",
+$code-font-family:
+				   "consolas",
 				   "monaco";
-
 
 /* 通用样式 */
 .hide{
@@ -32,7 +34,6 @@ $code-font-family: "consolas",
 	font-family: $content-font-family;
 	font-weight:normal;
 }
-
 
 body
 {
@@ -152,7 +153,6 @@ body
     a{
         text-decoration: none;
     }
-
 		
     #article-category-button
     {
@@ -287,7 +287,7 @@ body
         text-align:justify;
         margin:0px;
         font-size:16px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         padding:7px 0px;
         text-indent:2em;
         code{
