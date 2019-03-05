@@ -10,7 +10,7 @@ $title-font-family: "Times New Roman",
 					"Kaiti";
 
 // 正文字体 无衬线体 字体清晰 用于正文
-$content-font-family: "Times New Roman",
+$content-font-family: "Arial",
 				      "STXihei",
 					  "Microsoft YaHei";
 
@@ -287,10 +287,11 @@ body
         text-align:justify;
         margin:0px;
         font-size:16px;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         padding:7px 0px;
         text-indent:2em;
         code{
+			letter-spacing:1px;
             color:rgb(146,0,12);
             border-radius: 4px;
             font-size: 15px;
