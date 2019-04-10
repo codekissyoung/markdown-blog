@@ -9,7 +9,7 @@
 
 /* 重写github-markdown样式 */
 .markdown-body {
-  font-family: "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+  font-family: "ubuntu regular", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
   font-weight: normal; }
 
 body {
@@ -132,7 +132,7 @@ body {
   #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
     display: block;
     color: #666666;
-    font-family: "Times New Roman", "STKaiti", "Kaiti"; }
+    font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti"; }
   #article-content h1 {
     font-size: 26px;
     text-align: center;
@@ -147,20 +147,20 @@ body {
     margin-top: 10px;
     margin-bottom: 10px; }
   #article-content h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 18px;
     text-indent: 0em;
     margin-bottom: 12px; }
   #article-content h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px; }
   #article-content h5 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 5px; }
   #article-content .article-create-time {
     font-size: 13px;
-    font-family: "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+    font-family: "ubuntu regular", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
     font-weight: 200;
     color: #999; }
   #article-content a {
@@ -173,7 +173,7 @@ body {
     border-radius: 5px; }
     #article-content pre code {
       width: 100%;
-      font-family: "consolas", "monaco";
+      font-family: "ubuntu mono", "consolas", "monaco";
       line-height: 1.5;
       font-size: 15px;
       letter-spacing: 0px; }
@@ -219,7 +219,7 @@ body {
       padding: 2px;
       margin-left: 2px;
       margin-right: 2px;
-      font-family: "consolas", "monaco"; }
+      font-family: "ubuntu mono", "consolas", "monaco"; }
   #article-content img {
     display: block;
     margin: 10px auto;
@@ -297,7 +297,7 @@ body {
     text-decoration: none;
     list-style: none;
     line-height: 1.5;
-    font-family: "Times New Roman", "STKaiti", "Kaiti";
+    font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti";
     font-size: 17px; }
   #main_category ul {
     padding-left: 30px;
