@@ -34,27 +34,29 @@ body {
     position: relative;
     height: 100%; }
     #site-category #site-category-content #blog-name {
-      position: absolute;
-      bottom: 8px; }
+      height: 50px;
+      float: left; }
       #site-category #site-category-content #blog-name a {
+        line-height: 50px;
         font-size: 26px;
         text-decoration: none;
         font-weight: bold;
         color: #666666; }
     #site-category #site-category-content #blog-category-list {
-      position: absolute;
-      bottom: 8px;
-      left: 244px; }
+      font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti";
+      height: 50px;
+      line-height: 50px;
+      float: left; }
       #site-category #site-category-content #blog-category-list ul {
-        width: auto;
+        margin: 0px;
+        margin-top: 4px;
         list-style: none; }
         #site-category #site-category-content #blog-category-list ul li {
           padding: 0px 9px;
-          padding-bottom: 2px;
           float: left; }
           #site-category #site-category-content #blog-category-list ul li a {
             color: #666666;
-            font-size: 16px;
+            font-size: 18px;
             text-decoration: none; }
     #site-category #site-category-content #search-article {
       position: absolute;
@@ -134,14 +136,15 @@ body {
     color: #666666;
     font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti"; }
   #article-content h1 {
-    font-size: 26px;
-    text-align: center;
-    border-bottom: 0px;
+    font-size: 27px;
+    border-bottom: 2px solid lightgray;
     letter-spacing: 3px;
     padding-top: 30px; }
   #article-content h2 {
     font-size: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 0px 0px;
+    margin-bottom: 18px; }
   #article-content h3, #article-content h4, #article-content h5 {
     text-indent: 2em;
     margin-top: 10px;
@@ -166,7 +169,8 @@ body {
   #article-content a {
     color: #00a5f7; }
   #article-content pre {
-    margin: 8px 32px;
+    margin: 0px 32px;
+    margin-bottom: 16px;
     background-color: #f8f8f8;
     padding: 10px;
     overflow: auto;
@@ -209,7 +213,8 @@ body {
     margin: 0px;
     font-size: 16px;
     letter-spacing: 1px;
-    padding: 7px 0px;
+    padding: 0px 0px;
+    padding-bottom: 18px;
     text-indent: 2em; }
     #article-content p code {
       letter-spacing: 1px;

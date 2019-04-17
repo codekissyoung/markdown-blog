@@ -35,7 +35,7 @@ $html = "";
 // 首页
 if( !isset($article) || empty($article) ) 
 {
-	$html .= "<h1>最新文章</h1>";
+    $html .= "<h1>最新文章</h1>";
 	$list_dir = MD_ROOT;
 }
 // 访问目录
@@ -93,7 +93,7 @@ if( isset($list_dir) && !empty($list_dir) )
 $search_key = isset($_GET['search_key']) ? $_GET['search_key'] : '';
 if( $search_key )
 {/*{{{*/
-    $html 	   = "";
+    $html 	   = "<h1>搜索结果</h1>";
     $last_h2   = "";
     $li_list   = "";
     exec( "grep -ir --include *.md --exclude-dir='.git' \"$search_key\" ".MD_ROOT." | grep -v \`\`\`", $ret_arr, $ret_code );
