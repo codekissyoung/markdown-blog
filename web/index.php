@@ -59,6 +59,8 @@ if( isset($list_dir) && !empty($list_dir) )
 	$i = 0;
 	foreach( $md_file_list as $file )
 	{/*{{{*/
+        if( substr( $file, -3 ) != ".md" ) 
+            continue;
         $ret       = explode( ".md", $file['path'] );
         $href      = str_replace( MD_ROOT, "", $ret[0] );
 		$paths = explode( "/", $href );
