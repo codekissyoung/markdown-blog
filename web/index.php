@@ -58,8 +58,8 @@ if( isset($list_dir) && !empty($list_dir) )
 	$md_file_list = sort_file_list( $md_file_list );
 	$i = 0;
 	foreach( $md_file_list as $file )
-	{/*{{{*/
-        if( substr( $file, -3 ) != ".md" ) 
+	{
+        if( substr( $file['path'], -3 ) != ".md" ) 
             continue;
         $ret       = explode( ".md", $file['path'] );
         $href      = str_replace( MD_ROOT, "", $ret[0] );
@@ -87,7 +87,7 @@ if( isset($list_dir) && !empty($list_dir) )
 			$html .= $text;
 			$i++;
 		}
-	}/*}}}*/
+	}
 
 }
 
