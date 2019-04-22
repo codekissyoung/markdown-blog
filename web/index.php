@@ -69,7 +69,7 @@ if( isset($list_dir) && !empty($list_dir) )
 		$semantic_time = semantic_time( $file['time'] );
 		$html     .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}更新</span></h2>";
 
-		if( $i < 15 )
+		if( $i < 50 )
 		{
 			$content 	    = file_get_contents( $file['path'] );
 			$content_parsed = $parser -> makeHtml( $content );
