@@ -205,6 +205,7 @@ body {
       padding: 3px 0px;
       text-indent: 0em;
       line-height: 1.5;
+      margin: 0px;
       padding: 0px 16px; }
     #article-content blockquote ul {
       margin: 0px; }
@@ -236,7 +237,7 @@ body {
   #article-content img {
     display: block;
     margin: 10px auto;
-    box-shadow: 0 0 10px #555;
+    border: 1px solid #eaecef;
     border-radius: 6px; }
   #article-content span.search_key {
     color: #e810aa; }

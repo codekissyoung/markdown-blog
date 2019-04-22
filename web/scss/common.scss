@@ -294,6 +294,7 @@ body
             padding:3px 0px;
             text-indent:0em;
 			line-height:1.5;
+            margin:0px;
 			padding:0px 16px;
         }
 		ul{
@@ -332,7 +333,7 @@ body
     img{
         display:block;
         margin:10px auto;
-        box-shadow: 0 0 10px #555;
+        border:1px solid rgb(234,236,239);
         border-radius: 6px;
     }
     span.search_key{
