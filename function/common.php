@@ -1,7 +1,7 @@
 <?php
-function semantic_time($time)
+function semantic_time($time_str)
 {
-	$time = strtotime( $time );
+	$time = strtotime( $time_str );
     $today_zero_time = strtotime(date("Y-m-d"),time());
     $tomorrow_zero_time = $today_zero_time + 24 * 60 * 60;
 
@@ -32,6 +32,8 @@ function semantic_time($time)
     if(time() < strtotime('+1 month',$time))
         return floor($count/(24*60*60*7)).'周前';
 
+    return date("Y年n月t日",$time);
+
     if(time() < strtotime('+1 year',$time))
     {
         if(date('n') < date('n', $time))
@@ -39,6 +41,8 @@ function semantic_time($time)
         else
             return (date('n') - date('n', $time)).'个月前';
     }
+
+
     return (date('Y') - date('Y',$time)).'年前';
 }
 
