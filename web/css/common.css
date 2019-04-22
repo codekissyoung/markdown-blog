@@ -9,7 +9,7 @@
 
 /* 重写github-markdown样式 */
 .markdown-body {
-  font-family: "ubuntu regular", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+  font-family: "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
   font-weight: normal; }
 
 body {
@@ -43,7 +43,7 @@ body {
         font-weight: bold;
         color: #666666; }
     #site-category #site-category-content #blog-category-list {
-      font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti";
+      font-family: "sans", "Times New Roman", "STKaiti", "Kaiti";
       height: 50px;
       line-height: 50px;
       float: left; }
@@ -134,7 +134,7 @@ body {
   #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
     display: block;
     color: #666666;
-    font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti"; }
+    font-family: "sans", "Times New Roman", "STKaiti", "Kaiti"; }
   #article-content h1 {
     font-size: 27px;
     border-bottom: 2px solid lightgray;
@@ -164,7 +164,7 @@ body {
     margin-bottom: 5px; }
   #article-content .article-create-time {
     font-size: 13px;
-    font-family: "ubuntu regular", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+    font-family: "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
     font-weight: 200;
     color: #999; }
   #article-content a {
@@ -311,7 +311,7 @@ body {
     text-decoration: none;
     list-style: none;
     line-height: 1.5;
-    font-family: "ubuntu regular", "Times New Roman", "STKaiti", "Kaiti";
+    font-family: "sans", "Times New Roman", "STKaiti", "Kaiti";
     font-size: 17px; }
   #main_category ul {
     padding-left: 30px;

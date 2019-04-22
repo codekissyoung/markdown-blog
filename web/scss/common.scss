@@ -5,14 +5,14 @@ $border_line_color: grey;
 
 // 标题字体 衬线体用于标题 装饰性强
 $title-font-family: 
-                    "ubuntu regular",
+                    "sans",                 // ubuntu 下标题显示字体，暂时用sans，未找到更好的
 					"Times New Roman",
-					"STKaiti", // Mac 楷体
-					"Kaiti";   // Windows 楷体
+					"STKaiti",              // Mac 楷体
+					"Kaiti";                // Windows 楷体
 
 // 正文字体 无衬线体 字体清晰 用于正文
 $content-font-family: 
-                      "ubuntu regular",
+                      "sans",               // ubuntu 下正文显示效果最好的字体
 				      "Verdana",
 					  "Arial",
 				      "STXihei", 			// Mac 细黑
