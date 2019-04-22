@@ -221,12 +221,11 @@ body
     }
 	h3,h4,h5{
 		text-indent:2em;
-		// color:#406d91;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
     h3{
-        font-size:16px;
+        font-size:18px;
         margin-top:18px;
         text-indent:0em;
         margin-bottom:12px;
@@ -268,6 +267,7 @@ body
 		font-size: 15px;
 		margin-left:1.4em;
 		margin:0px 32px;
+        margin-bottom:18px;
     }
 
 	ul.search-list-ul{
@@ -278,6 +278,7 @@ body
         p{
             text-indent:0em;
             padding:0px;
+            margin:0px;
         }
 		ol,ul{
 			margin-left:0em;
@@ -309,7 +310,7 @@ body
         font-size:16px;
         letter-spacing: 1px;
         padding:0px 0px;
-        padding-bottom:18px;
+        margin-bottom:14px;
         text-indent:2em;
         code{
 			letter-spacing:1px;

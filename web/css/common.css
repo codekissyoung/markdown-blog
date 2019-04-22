@@ -151,7 +151,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px; }
   #article-content h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 18px;
     text-indent: 0em;
     margin-bottom: 12px; }
@@ -185,12 +185,14 @@ body {
   #article-content ol, #article-content ul {
     font-size: 15px;
     margin-left: 1.4em;
-    margin: 0px 32px; }
+    margin: 0px 32px;
+    margin-bottom: 18px; }
   #article-content ul.search-list-ul {
     margin: 0px; }
   #article-content li p {
     text-indent: 0em;
-    padding: 0px; }
+    padding: 0px;
+    margin: 0px; }
   #article-content li ol, #article-content li ul {
     margin-left: 0em; }
   #article-content blockquote {
@@ -215,7 +217,7 @@ body {
     font-size: 16px;
     letter-spacing: 1px;
     padding: 0px 0px;
-    padding-bottom: 18px;
+    margin-bottom: 14px;
     text-indent: 2em; }
     #article-content p code {
       letter-spacing: 1px;
