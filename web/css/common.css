@@ -228,6 +228,11 @@ body {
       margin-left: 2px;
       margin-right: 2px;
       font-family: "ubuntu mono", "consolas", "monaco"; }
+    #article-content p strong {
+      font-weight: normal;
+      border-bottom: 1px dashed red;
+      margin-left: 2px;
+      margin-right: 2px; }
   #article-content img {
     display: block;
     margin: 10px auto;

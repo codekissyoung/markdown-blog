@@ -322,6 +322,12 @@ body
 			margin-right:2px;
 			font-family: $code-font-family;
         }
+        strong{
+            font-weight:normal;
+            border-bottom:1px dashed red;
+            margin-left:2px;
+            margin-right:2px;
+        }
     }
     img{
         display:block;
