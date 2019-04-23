@@ -311,16 +311,15 @@ body
         font-size:16px;
         letter-spacing: 1px;
         padding:0px 0px;
-        margin-bottom:14px;
         text-indent:2em;
         code{
-			letter-spacing:1px;
-            color:rgb(146,0,12);
-            border-radius: 4px;
-            font-size: 15px;
+            background-color:#f9f2f4;
+            color:#c7254e;
+            font-size:16px;
+            border-radius: 2px;
             padding: 2px;
-			margin-left:2px;
-			margin-right:2px;
+            padding-top:0px;
+            padding-bottom:0px;
 			font-family: $code-font-family;
         }
         strong{
