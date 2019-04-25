@@ -185,7 +185,8 @@ body {
   #article-content ol, #article-content ul {
     font-size: 15px;
     margin-left: 1.4em;
-    margin: 0px 32px;
+    margin: 0px 18px;
+    padding-left: 20px;
     margin-bottom: 18px; }
   #article-content ul.search-list-ul {
     margin: 0px; }
@@ -216,8 +217,7 @@ body {
     text-align: justify;
     font-size: 16px;
     letter-spacing: 1px;
-    padding: 0px 0px;
-    text-indent: 2em; }
+    padding: 0px 0px; }
     #article-content p code {
       background-color: #f9f2f4;
       color: #c7254e;
