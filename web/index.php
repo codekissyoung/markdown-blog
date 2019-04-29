@@ -10,7 +10,9 @@ if( isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $protocol = 'https://';
 
 $current_article = isset($_SERVER['PATH_INFO']) ? $_SERVER["PATH_INFO"] : '';
-$title  = trim(join('-',explode("/",$current_article))."-".BLOG_TITLE,'-');
+
+$article_title = array_reverse(explode("/",$current_article))[0];
+$title = !empty($article_title) ? $article_title." | ".BLOG_TITLE : BLOG_TITLE; 
 
 // 加载url里路径指明的文章
 if( $current_article )
@@ -29,7 +31,7 @@ else
 }
 
 $content = "";
-$html = "";
+$html    = "";
 
 
 // 首页
