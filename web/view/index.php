@@ -9,7 +9,7 @@
         </div>
     </nav>
     <div id="article-category-button">
-        <a  href="javascript:void();">目录</a>
+        <a href="javascript:void(0)">目录</a>
     </div>
     <div id="article-content">
         <div class="markdown-body">

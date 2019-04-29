@@ -41,15 +41,25 @@ $(function(){
             url:href + "?ajax=1",
             type:'GET',
             data:{},
-            dataType:'text',
+            dataType:'html',
             timeout:5000,
             success:function(data){
                 $("#article-content").empty().append($(data)).find('pre code').each(function(i,block){
                     hljs.highlightBlock(block);
                 });
+
+                // 修改浏览器的 url 显示
                 var title = href;
-                var newUrl = href;
-                history.pushState({},title,newUrl);
+                var new_url = href;
+                history.pushState( {}, title, new_url );
+
+                // 修改浏览器的 标题 显示
+                var old_title    = document.title;
+                var article_name = title.split("/").reverse()[0];
+                var blog_name    = old_title.replace( /^.* \| /im, "" );
+                document.title   = article_name + " | " + blog_name;
+
+                // 设置目录 标题 高亮
                 set_category_height();
 				
 				/*
@@ -57,7 +67,6 @@ $(function(){
 				 * 网上有为动态加载的DOM绑定事件的方法
 				 * @todo 下次有空研究JS的时候改造下
 				 * */
-
 				// markdown生成的所有a链接全在新标签页打开 
 				$("#article-content a").attr("target","_blank");
 
