@@ -1,6 +1,6 @@
 <?php
 function semantic_time($time_str)
-{
+{/*{{{*/
 	$time = strtotime( $time_str );
     $today_zero_time = strtotime(date("Y-m-d"),time());
     $tomorrow_zero_time = $today_zero_time + 24 * 60 * 60;
@@ -44,7 +44,7 @@ function semantic_time($time_str)
 
 
     return (date('Y') - date('Y',$time)).'年前';
-}
+}/*}}}*/
 
 function file_list( $path )
 {
@@ -56,7 +56,9 @@ function file_list( $path )
 	foreach($tree as $key => $leaf)
 	{
 		if( is_dir( $path."/".$leaf ) )
-			$file_list = array_merge( $file_list, file_list($path.$leaf) );
+        {
+			$file_list = array_merge( $file_list, file_list( $path.$leaf ) );
+        }
 		else
 		{
 			$file['path'] = $path."/".$leaf;
