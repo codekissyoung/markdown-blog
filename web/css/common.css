@@ -41,7 +41,7 @@ body {
         font-size: 26px;
         text-decoration: none;
         font-weight: bold;
-        color: #666666; }
+        color: #333; }
     #site-category #site-category-content #blog-category-list {
       font-family: "sans", "Times New Roman", "STKaiti", "Kaiti";
       height: 50px;
@@ -49,22 +49,23 @@ body {
       float: left; }
       #site-category #site-category-content #blog-category-list ul {
         margin: 0px;
-        margin-top: 4px;
+        margin-top: 0px;
         list-style: none; }
         #site-category #site-category-content #blog-category-list ul li {
           padding: 0px 9px;
           float: left; }
           #site-category #site-category-content #blog-category-list ul li a {
-            color: #666666;
-            font-size: 18px;
+            color: #333;
+            font-size: 16px;
             text-decoration: none; }
     #site-category #site-category-content #search-article {
       position: absolute;
+      border-radius: 10px;
       right: 0px;
       bottom: 10px; }
       #site-category #site-category-content #search-article form {
         text-align: left;
-        border: 1px solid #ddd; }
+        border: 1px solid #dfe2e5; }
         #site-category #site-category-content #search-article form input[type="text"] {
           width: 180px;
           height: 20px;
@@ -73,7 +74,7 @@ body {
           margin: 0px;
           padding-right: 4px;
           border: 0px;
-          color: #636b6f;
+          color: #666;
           outline: none;
           letter-spacing: 1px; }
         #site-category #site-category-content #search-article form input[type="submit"] {
@@ -81,9 +82,10 @@ body {
           padding-top: 2px;
           padding-bottom: 2px;
           font-weight: normal;
-          color: #636b6f;
+          color: #666;
           outline: none;
-          border-left: 1px solid #ddd;
+          border-left: 1px solid #dfe2e5;
+          letter-spacing: 1px;
           cursor: pointer;
           background-color: white; }
 
@@ -98,9 +100,9 @@ body {
   width: 1020px;
   margin: 0px auto;
   margin-top: 80px;
-  border: 1px solid #ddd;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border: 1px solid #eee; }
   #article a {
     text-decoration: none; }
   #article #article-category-button {
@@ -111,14 +113,15 @@ body {
     width: 20px;
     padding-top: 6px;
     padding-bottom: 4px;
-    padding-right: 2px;
-    padding-left: 2px;
-    border: 1px solid #ddd;
+    padding-right: 3px;
+    padding-left: 3px;
+    border: 1px solid #eee;
     border-left: 0px; }
     #article #article-category-button a {
       writing-mode: vertical-lr;
-      color: #706b6e;
-      font-size: 16px;
+      color: #959da5;
+      font-size: 18px;
+      letter-spacing: 2px;
       text-decoration: none; }
 
 #article-content {
@@ -237,7 +240,7 @@ body {
     border: 1px solid #eaecef;
     border-radius: 6px; }
   #article-content span.search_key {
-    color: #e810aa; }
+    border-bottom: 1px dashed red; }
   #article-content table {
     display: table;
     margin: 10px auto; }
@@ -251,7 +254,7 @@ body {
 
 #main_category {
   position: absolute;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #eee;
   left: 0px;
   top: 0px;
   display: none;

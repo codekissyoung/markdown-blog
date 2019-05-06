@@ -107,7 +107,11 @@ if( $search_key )
         {
             $ret            = explode(".md:",$value);
             $href           = str_replace(MD_ROOT,"",$ret[0]);
-            $value          = str_ireplace( $search_key ,'<span class=search_key>'.$search_key.'</span>', htmlentities( $ret[1] ) );
+            $value          = str_ireplace( 
+                                            $search_key,
+                                            '<span class=search_key>'.$search_key.'</span>', 
+                                            preg_replace( '/(^[-# ]*|`)/i', '', htmlentities( $ret[1] ) )
+                                        );
             $li 			= "<li class=search-list> $value </li>";
 			$h2             = "<h2><a href='$protocol$host/$href'>$href</a></h2>";
 			$li_list 	   .= $li;

@@ -1,7 +1,9 @@
 /* 变量定义 */
 $article_width: 1020px;
 $backgroud_color: white;
-$border_line_color: grey;
+$border_line_color: #eee;
+$blog_topbar_color: #333;
+
 
 // 标题字体 衬线体用于标题 装饰性强
 $title-font-family: 
@@ -68,17 +70,14 @@ body
         height: 100%;
         #blog-name
         {
-            // position: absolute;
             height:50px;
             float:left;
-            // bottom: 8px;
             a{
                 line-height:50px;
-                // height:50px;
                 font-size: 26px;
                 text-decoration: none;
                 font-weight:bold;
-                color:#666666;
+                color:$blog_topbar_color;
             }
         }
         #blog-category-list
@@ -87,21 +86,16 @@ body
             height:50px;
             line-height:50px;
             float:left;
-            // position: absolute;
-            // bottom: 8px;
-            // left: 244px;
 			ul{
                 margin:0px;
-                margin-top:4px;
-				// width:auto;
+                margin-top:0px;
 				list-style:none;
 				li{
 					padding:0px 9px;
-		//			padding-bottom:2px;
 					float:left;
 					a{
-						color:#666666;
-						font-size: 18px;
+						color:$blog_topbar_color;
+						font-size: 16px;
 						text-decoration: none;
 					}
 				}
@@ -110,11 +104,12 @@ body
         #search-article
         {
             position: absolute;
+            border-radius:10px;
             right: 0px;
             bottom: 10px;
             form{
                 text-align:left;
-                border:1px solid #ddd;
+                border:1px solid #dfe2e5;
                 input[type="text"]{
                     width:180px;
                     height: 20px;
@@ -123,7 +118,7 @@ body
                     margin: 0px;
                     padding-right: 4px;
                     border:0px;
-                    color: #636b6f;
+                    color: #666;
                     outline: none;
                     letter-spacing: 1px;
                 }
@@ -133,9 +128,10 @@ body
                     padding-top:2px;
                     padding-bottom:2px;
                     font-weight:normal;
-                    color:#636b6f;
+                    color:#666;
                     outline: none;
-					border-left:1px solid #ddd;
+					border-left:1px solid #dfe2e5;
+                    letter-spacing:1px;
 					cursor:pointer;
 					background-color:white;
                 }
@@ -160,9 +156,9 @@ body
     width: $article_width;
     margin:0px auto;
 	margin-top:80px;
-    border: 1px solid #ddd;
     overflow:hidden;
     position: relative;
+    border:1px solid $border_line_color;
     a{
         text-decoration: none;
     }
@@ -176,14 +172,15 @@ body
         width: 20px;
         padding-top: 6px;
         padding-bottom: 4px;
-        padding-right: 2px;
-        padding-left: 2px;
-        border: 1px solid #ddd;
+        padding-right: 3px;
+        padding-left: 3px;
+        border: 1px solid $border_line_color;
         border-left: 0px;
         a{
             writing-mode: vertical-lr;
-            color: #706b6e;
-            font-size: 16px;
+            color: #959da5;
+            font-size: 18px;
+            letter-spacing:2px;
             text-decoration: none;
         }
     }
@@ -336,7 +333,8 @@ body
         border-radius: 6px;
     }
     span.search_key{
-        color:#e810aa;
+        // color:#e810aa;
+        border-bottom:1px dashed red;
     }
     table
     {
@@ -362,7 +360,7 @@ body
 #main_category
 {
     position: absolute;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid $border_line_color;
     left: 0px;
     top:0px;
     display: none;
