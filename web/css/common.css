@@ -13,7 +13,6 @@
   font-weight: normal; }
 
 body {
-  background: #fafbfc;
   margin-top: -20px; }
 
 #site-category {
@@ -174,7 +173,7 @@ body {
     color: #00a5f7; }
   #article-content pre {
     margin-bottom: 16px;
-    background-color: #f8f8f8;
+    background-color: #fafbfc;
     padding: 10px;
     overflow: auto;
     border-radius: 5px; }
