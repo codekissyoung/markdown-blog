@@ -105,9 +105,9 @@ body {
   #article a {
     text-decoration: none; }
   #article #article-category-button {
-    position: absolute;
-    top: 20px;
-    left: 0px;
+    position: fixed;
+    top: 90px;
+    left: -20px;
     text-align: center;
     width: 20px;
     padding-top: 6px;

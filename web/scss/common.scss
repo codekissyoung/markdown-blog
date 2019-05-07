@@ -165,9 +165,9 @@ body
 		
     #article-category-button
     {
-        position: absolute;
-        top: 20px;
-        left: 0px;
+        position: fixed;
+        top: 90px;
+        left: -20px; // 为了一开始隐藏该目录按钮，后面 JS 运行时才确定最后的 left
         text-align: center;
         width: 20px;
         padding-top: 6px;

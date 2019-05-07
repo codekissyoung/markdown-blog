@@ -19,6 +19,7 @@ function moveDirection( tag, e )
 
 $(function(){
 
+    /******************* functions **********************/
     // 目录高度的动态变化
     function set_category_height()
     {
@@ -28,12 +29,20 @@ $(function(){
         var height = window_height < article_height ? window_height : article_height;
         $("#main-category-content").css("height", height + 'px');
     }
-    set_category_height();
-    // $("#main-category-content").css("height",$(window).height() - 253 + 'px');
-    $(window).on('resize',set_category_height);
 
+    // 设置 目录 按钮的 left 属性值
+    function set_category_button_left(){
+        var left = $("#article").css('marginLeft');
+        console.log( left );
+        $("#article-category-button").css("left", left );
+    }
+
+
+
+
+    /******************* bind event *********************/
     // 异步加载文章
-    $('#main_category a').on('click',function(){
+    $('#main_category a').on('click',function(){//{{{
         $("#main_category a").removeClass('active');
         $(this).addClass('active');
         var href = $(this).attr('href');
@@ -78,37 +87,44 @@ $(function(){
             }
         });
         return false; // 阻止冒泡 阻止事件
-    });
+    });//}}}
 
     // 目录折叠
-    $("#main-category-content>ul h2").on('click',function () {
+    $("#main-category-content>ul h2").on('click',function () {//{{{
         if($(this).next().hasClass('hide')){
             $(this).next().removeClass('hide').hasClass('show');
         }else{
             $(this).next().removeClass('show').addClass('hide');
         }
-    });
+    });//}}}
 
     // 点击显示目录
-    $("#article-category-button").on("click",function(){
+    $("#article-category-button").on("click",function(){//{{{
         $('#main_category').animate({width:'toggle'},300);
-    });
+    });//}}}
 
     // 鼠标移出目录div
-    $("#main_category").on( "mouseleave", function(e){
+    $("#main_category").on( "mouseleave", function(e){//{{{
         var eType = e.type;
         var direction = moveDirection( this, e );
         // 从右边移出目录，则目录收起来
         if( direction == 1 )
             $('#main_category').animate({width:'toggle'},300);
-    });
+    });//}}}
 
-    $(window).scroll(function(){
+    // 浏览器宽度发生变化时
+    $(window).on('resize', function() {//{{{
+        set_category_height();
+        set_category_button_left();
+    });//}}}
+
+    // 浏览器滚动时
+    $(window).scroll(function(){//{{{
         var topp = $(document).scrollTop();
         
         // 目录两个字的 top 的变化
         var top = topp + 20;
-        $("#article-category-button").css("top",top + "px");
+        // $("#article-category-button").css("top",top + "px");
 
         // 目录 div 本身的变化
         var div_top = topp;
@@ -116,14 +132,23 @@ $(function(){
         if( topp >= 10 )
             div_top = topp - 10;
         $("#main_category").css("top",div_top + "px");
-    });
+    });//}}}
 
+	// 点击h2标签后，与下一个h2标签中间的内容收起来
+	$("#article-content h2").on("click",function(){//{{{
+		$(this).nextUntil("h2").toggle();
+	});//}}}
+
+
+
+    /************** run when document loaded ************/
     // markdown生成的所有a链接全在新标签页打开 
     $("#article-content a").attr("target","_blank");
 
-	// 点击h2标签后，与下一个h2标签中间的内容收起来
-	$("#article-content h2").on("click",function(){
-		$(this).nextUntil("h2").toggle();
-	});
+    // 设置目录的高
+    set_category_height();
+
+    // 设置目录按钮的 left 属性
+    set_category_button_left();
 
 });
