@@ -56,7 +56,7 @@ elseif( is_file( $article.".md" ) )
 if( isset($list_dir) && !empty($list_dir) )
 {
 	$md_file_list = [];
-	$md_file_list = file_list( $list_dir, $md_file_list );
+	$md_file_list = file_list( $list_dir );
 	$md_file_list = sort_file_list( $md_file_list );
 	$i = 0;
 	foreach( $md_file_list as $file )

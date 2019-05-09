@@ -33,17 +33,6 @@ function semantic_time($time_str)
         return floor($count/(24*60*60*7)).'周前';
 
     return date("Y年n月t日",$time);
-
-    if(time() < strtotime('+1 year',$time))
-    {
-        if(date('n') < date('n', $time))
-            return (date('n') + 12 - date('n', $time)).'个月前';
-        else
-            return (date('n') - date('n', $time)).'个月前';
-    }
-
-
-    return (date('Y') - date('Y',$time)).'年前';
 }/*}}}*/
 
 function file_list( $path )
@@ -164,7 +153,6 @@ function file_tree_print($tree,$cf = '',$path = false)
 	$html .= "</ul>";
 	return $html;
 }
-
 
 function debug($var)
 {
