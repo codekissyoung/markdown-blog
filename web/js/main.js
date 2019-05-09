@@ -33,7 +33,6 @@ $(function(){
     // 设置 目录 按钮的 left 属性值
     function set_category_button_left(){
         var left = $("#article").css('marginLeft');
-        console.log( left );
         $("#article-category-button").css("left", left );
     }
 
