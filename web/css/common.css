@@ -135,46 +135,45 @@ body {
       text-decoration: none; }
 
 #article-content {
-  background-color: white;
-  top: 0px;
-  padding: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 100px;
+  padding: 20px 60px 100px 60px;
   box-sizing: border-box;
   letter-spacing: 1px;
-  min-height: 1000px; }
+  min-height: 1000px;
+  background-color: white; }
   #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
     display: block;
-    color: #666666;
     font-family: "sans", "Times New Roman", "STKaiti", "Kaiti"; }
   #article-content h1 {
-    font-size: 27px;
+    font-size: 28px;
     border-bottom: 2px solid lightgray;
     letter-spacing: 3px;
     padding-top: 30px; }
   #article-content h2 {
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
-    margin: 0px 0px;
-    margin-top: 18px;
-    margin-bottom: 18px; }
-    #article-content h2 a {
-      color: #333; }
+    margin: 22px 0px 10px 0px;
+    border-bottom: 1px solid #eaecef; }
+  #article-content .markdown-body .article-summary-list {
+    border-bottom: 1px solid #eaecef; }
+    #article-content .markdown-body .article-summary-list h2 {
+      border-bottom: 0px;
+      margin-bottom: 0px; }
+    #article-content .markdown-body .article-summary-list p {
+      font-size: 16px; }
   #article-content h3, #article-content h4, #article-content h5 {
     text-indent: 2em;
     margin-top: 10px;
     margin-bottom: 10px; }
   #article-content h3 {
-    font-size: 18px;
+    font-size: 19px;
     margin-top: 30px;
     text-indent: 0em;
     margin-bottom: 12px; }
   #article-content h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px; }
   #article-content h5 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 5px; }
   #article-content .article-create-time {
@@ -227,26 +226,27 @@ body {
       #article-content blockquote ul li {
         margin: 0px; }
   #article-content p {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     line-height: 1.5;
     text-align: justify;
     font-size: 17px;
     letter-spacing: 1px;
     padding: 0px 0px; }
     #article-content p code {
+      color: #e36209;
       font-size: 15px;
       margin: 0px 2px;
       border-radius: 4px;
       padding: 3px 6px;
       font-family: "ubuntu mono", "consolas", "monaco"; }
     #article-content p strong {
-      color: black;
+      color: #24292e;
       font-weight: normal;
       margin-left: 2px;
       margin-right: 2px;
       font-weight: bold; }
       #article-content p strong code {
-        color: black;
+        color: #24292e;
         padding: 0px;
         background-color: white;
         font-size: 17px; }

@@ -69,7 +69,8 @@ if( isset($list_dir) && !empty($list_dir) )
 		$cnt = count( $paths );
 		$article_name = $paths[ $cnt - 1 ];
 		$semantic_time = semantic_time( $file['time'] );
-		$html     .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}更新</span></h2>";
+        $html .= "<div class=article-summary-list>";
+		$html     .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}</span></h2>";
 
 		if( $i < 50 )
 		{
@@ -87,6 +88,7 @@ if( isset($list_dir) && !empty($list_dir) )
 				$text = "<p>文章无缩略内容。</p>";
 
 			$html .= $text;
+            $html .= "</div>";
 			$i++;
 		}
 	}
