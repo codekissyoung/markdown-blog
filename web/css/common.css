@@ -12,6 +12,16 @@
   font-family: "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
   font-weight: normal; }
 
+.hljs-keyword {
+  color: #b31d28; }
+
+.hljs-built_in {
+  color: #24292e; }
+
+.hljs-function .hljs-title {
+  color: black;
+  font-weight: normal; }
+
 body {
   margin-top: -20px; }
 
@@ -154,7 +164,7 @@ body {
     margin-bottom: 10px; }
   #article-content h3 {
     font-size: 18px;
-    margin-top: 18px;
+    margin-top: 30px;
     text-indent: 0em;
     margin-bottom: 12px; }
   #article-content h4 {
@@ -173,7 +183,7 @@ body {
     color: #00a5f7; }
   #article-content pre {
     margin-bottom: 16px;
-    background-color: #fafbfc;
+    background-color: #f6f8fa;
     padding: 10px;
     overflow: auto;
     border-radius: 5px; }
@@ -214,6 +224,7 @@ body {
       #article-content blockquote ul li {
         margin: 0px; }
   #article-content p {
+    margin-bottom: 4px;
     line-height: 1.5;
     text-align: justify;
     font-size: 16px;
