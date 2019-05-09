@@ -1,6 +1,6 @@
 /* 变量定义 */
 $article_width: 1100px;
-$backgroud_color: white;
+$background_color: white;
 $border_line_color: #eee;
 $blog_topbar_color: #333;
 
@@ -68,7 +68,7 @@ body
     a{
         color:black;
     }
-    background: $backgroud_color;
+    background: $background_color;
     position: fixed;
 	top:0px;
     z-index: 10;
@@ -207,7 +207,7 @@ body
     box-sizing:border-box;
     letter-spacing:1px;
     min-height:1000px;
-    background-color: $backgroud_color;
+    background-color: $background_color;
     h1,h2,h3,h4,h5{
         display: block;
         font-family:$title-font-family;
@@ -393,7 +393,7 @@ body
     left: 0px;
     top:0px;
     display: none;
-    background-color:$backgroud_color;
+    background-color: $background_color;
     // opacity:0.9;
     z-index:1;
     top:0px;
