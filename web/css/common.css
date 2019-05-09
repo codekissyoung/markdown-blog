@@ -38,7 +38,7 @@ body {
   #site-category a {
     color: black; }
   #site-category #site-category-content {
-    width: 1020px;
+    width: 1100px;
     margin: 0px auto;
     position: relative;
     height: 100%; }
@@ -61,6 +61,7 @@ body {
         margin-top: 0px;
         list-style: none; }
         #site-category #site-category-content #blog-category-list ul li {
+          line-height: 58px;
           padding: 0px 9px;
           float: left; }
           #site-category #site-category-content #blog-category-list ul li a {
@@ -106,7 +107,7 @@ body {
   text-align: center; }
 
 #article {
-  width: 1020px;
+  width: 1100px;
   margin: 0px auto;
   margin-top: 80px;
   overflow: hidden;
@@ -158,6 +159,8 @@ body {
     margin: 0px 0px;
     margin-top: 18px;
     margin-bottom: 18px; }
+    #article-content h2 a {
+      color: #333; }
   #article-content h3, #article-content h4, #article-content h5 {
     text-indent: 2em;
     margin-top: 10px;
@@ -227,23 +230,26 @@ body {
     margin-bottom: 4px;
     line-height: 1.5;
     text-align: justify;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 1px;
     padding: 0px 0px; }
     #article-content p code {
-      background-color: #f9f2f4;
-      color: #c7254e;
-      font-size: 16px;
-      border-radius: 2px;
-      padding: 2px;
-      padding-top: 0px;
-      padding-bottom: 0px;
+      font-size: 15px;
+      margin: 0px 2px;
+      border-radius: 4px;
+      padding: 3px 6px;
       font-family: "ubuntu mono", "consolas", "monaco"; }
     #article-content p strong {
+      color: black;
       font-weight: normal;
-      border-bottom: 1px dashed red;
       margin-left: 2px;
-      margin-right: 2px; }
+      margin-right: 2px;
+      font-weight: bold; }
+      #article-content p strong code {
+        color: black;
+        padding: 0px;
+        background-color: white;
+        font-size: 17px; }
   #article-content img {
     display: block;
     margin: 10px auto;
