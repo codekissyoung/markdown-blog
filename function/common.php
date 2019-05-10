@@ -51,13 +51,14 @@ function semantic_time($time_str)
 
 function file_list( $path )
 {
-	$tree = scandir($path);
+    $path = preg_replace('/\/$/im','',$path);
+	$tree = scandir( $path );
 	$tree = array_diff( $tree, [".","..",".gitignore",".git",".svn",".vscode","README.md"] );
 
 	$file_list = [];
 	foreach($tree as $key => $leaf)
 	{
-	    $leaf_path = $path."/".$leaf;
+	    $leaf_path = "{$path}/{$leaf}";
 		if( is_dir( $leaf_path ) )
         {
 			$file_list = array_merge( $file_list, file_list( $leaf_path ) );
