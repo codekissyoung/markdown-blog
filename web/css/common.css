@@ -277,7 +277,7 @@ body {
   z-index: 1;
   top: 0px;
   left: 0px;
-  width: 300px; }
+  width: 330px; }
   #main_category #main-category-title {
     height: 40px;
     margin-top: 30px;
@@ -287,10 +287,9 @@ body {
       text-align: center;
       font-size: 34px; }
   #main_category #main-category-content {
-    width: 300px;
+    width: 330px;
     overflow: auto;
     height: 100%;
-    #padding-top: 100px;
     padding-bottom: 200px;
     border-bottom: 1px solid #ddd; }
   #main_category h1, #main_category h2, #main_category h3, #main_category h4, #main_category h5 {
@@ -315,7 +314,7 @@ body {
   #main_category .head-tag {
     display: inline-block; }
   #main_category a {
-    color: #666666;
+    color: #666;
     text-decoration: none;
     font-size: 15px;
     letter-spacing: 2px; }
@@ -329,7 +328,7 @@ body {
     font-family: "sans", "Times New Roman", "STKaiti", "Kaiti";
     font-size: 17px; }
   #main_category ul {
-    padding-left: 18px;
+    padding-left: 16px;
     margin: 0px; }
   #main_category li {
     margin: 3px 0px; }

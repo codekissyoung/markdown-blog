@@ -5,6 +5,7 @@ $border_line_color: #eee;
 $blog_topbar_color: #333;
 $code-keyword-color: #b31d28;
 $code-built-in-color: #24292e;
+$main-category-width: 330px;
 
 // 标题字体 衬线体用于标题 装饰性强
 $title-font-family: 
@@ -396,24 +397,21 @@ body
     z-index:1;
     top:0px;
     left: 0px;
-    width: 300px;
+    width: $main-category-width;
 	#main-category-title{
 		height:40px;
 		margin-top:30px;
 		margin-bottom:30px;
-		
 		h2{
 			letter-spacing:10px;
-			text-align:center;	
+			text-align:center;
 			font-size:34px;
-			//margin-top:50px;
 		}
 	}
     #main-category-content{
-        width:300px;
+        width:$main-category-width;
         overflow:auto;
         height: 100%;
-        #padding-top:100px;
         padding-bottom: 200px;
         border-bottom: 1px solid #ddd;
     }
@@ -446,7 +444,7 @@ body
         display:inline-block;
     }
     a{
-        color:#666666;
+        color:#666;
         text-decoration:none;
         font-size:15px;
         letter-spacing:2px;
@@ -463,7 +461,7 @@ body
 		font-size:17px;
     }
     ul{
-        padding-left:18px;
+        padding-left:16px;
         margin: 0px;
     }
 	li{
