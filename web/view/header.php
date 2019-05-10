@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="baidu-site-verification" content="PVkQXzqbOU" />
-        <title><?=$title?></title>
+        <title><?=$site_title?></title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link href="/css/normalize.css" rel="stylesheet"/>
         <link href="/css/github.css" rel="stylesheet">

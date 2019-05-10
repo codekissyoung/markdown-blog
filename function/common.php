@@ -1,6 +1,20 @@
 <?php
+
+function debug($var)
+{
+    if( is_string($var) )
+        $log = $var;
+    else
+        // 格式化打印 + 不转义中文 与 斜杠
+        $log = json_encode( $var, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES );
+
+    $log .= "\n";
+
+    file_put_contents( "debug.log",  $log, FILE_APPEND );
+}
+
 function semantic_time($time_str)
-{/*{{{*/
+{
 	$time = strtotime( $time_str );
     $today_zero_time = strtotime(date("Y-m-d"),time());
     $tomorrow_zero_time = $today_zero_time + 24 * 60 * 60;
@@ -33,40 +47,36 @@ function semantic_time($time_str)
         return floor($count/(24*60*60*7)).'周前';
 
     return date("Y年n月t日",$time);
-}/*}}}*/
+}
 
 function file_list( $path )
 {
 	$tree = scandir($path);
-
 	$tree = array_diff( $tree, [".","..",".gitignore",".git",".svn",".vscode","README.md"] );
 
 	$file_list = [];
 	foreach($tree as $key => $leaf)
 	{
-		if( is_dir( $path."/".$leaf ) )
+	    $leaf_path = $path."/".$leaf;
+		if( is_dir( $leaf_path ) )
         {
-			$file_list = array_merge( $file_list, file_list( $path.$leaf ) );
+			$file_list = array_merge( $file_list, file_list( $leaf_path ) );
         }
 		else
 		{
-			$file['path'] = $path."/".$leaf;
+			$file['path'] = $leaf_path;
 			$file['time'] = date( "Y-m-d H:i:s", filemtime( $file['path'] ) );
 			$file_list[] = $file;
 		}
 	}
-	return $file_list;
-}
 
-function sort_file_list( $file_list )
-{
-	foreach( $file_list as $k => $v )
-	{
-		$time[$k] = $v['time'];
-	}
+    foreach( $file_list as $k => $v )
+    {
+        $time[$k] = $v['time'];
+    }
 
-	array_multisort( $time, SORT_DESC, SORT_STRING, $file_list );
-	return $file_list;
+    array_multisort( $time, SORT_DESC, SORT_STRING, $file_list );
+    return $file_list;
 }
 
 // $path 路径 返回目录树数组
@@ -154,12 +164,4 @@ function file_tree_print($tree,$cf = '',$path = false)
 	return $html;
 }
 
-function debug($var)
-{
-    if( is_string($var) )
-        $log = $var;
-    else
-        $log = json_encode( $var, JSON_PRETTY_PRINT );
 
-    file_put_contents( "debug.log",  $log, FILE_APPEND );
-}

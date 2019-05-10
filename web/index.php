@@ -1,57 +1,32 @@
 <?php
 error_reporting( E_ALL );
 
+/******************************** config ***************************/
 include_once '../config.php';
+
+/******************************** libs   ***************************/
 $parser  	  = new HyperDown\Parser();
-$host         = $_SERVER["HTTP_HOST"];
-$content      = "";
-$html         = "";
-$protocol     = @$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ?  'https://' : 'http://';
+
+/******************************** env   ***************************/
+$host               = $_SERVER["HTTP_HOST"];
+$protocol           = @$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ?  'https://' : 'http://';
+$path_info          = isset($_SERVER['PATH_INFO']) ? $_SERVER["PATH_INFO"] : '';
+$last_path_info_str = array_reverse(explode("/",$path_info))[0];
+$site_title         = !empty($last_path_info_str) ? $last_path_info_str." | ".BLOG_TITLE : BLOG_TITLE;
+$file_path          = MD_ROOT."{$path_info}";
 
 
-$current_article = isset($_SERVER['PATH_INFO']) ? $_SERVER["PATH_INFO"] : '';
+// 文章
+if( is_file( $file_path.".md" ) )
+	$html = $parser -> makeHtml( file_get_contents( $file_path.".md" ) );
 
-$article_title = array_reverse(explode("/",$current_article))[0];
-$title = !empty($article_title) ? $article_title." | ".BLOG_TITLE : BLOG_TITLE; 
+// 目录
+elseif( is_dir( $file_path ) )
+{
+    $html =  $file_path == MD_ROOT ? "<h1>最新文章</h1>" : "<h1>文章列表</h1>";
 
+	$md_file_list = file_list( $file_path );
 
-if( $current_article )                                              // 加载url里路径指明的文章
-{
-    $article = MD_ROOT."{$current_article}";
-}
-elseif( isset( $DEFAULT_ARTICLE ) && !empty( $DEFAULT_ARTICLE ) )  // 首页加载默认的自定义文章
-{
-	$article = $DEFAULT_ARTICLE;
-}
-else                                                                // 加载文章列表
-{
-	$article = '';
-}
-
-// 首页
-if( !isset($article) || empty($article) ) 
-{
-    $html .= "<h1>最新文章</h1>";
-	$list_dir = MD_ROOT;
-}
-// 访问目录
-elseif( is_dir( $article ) )
-{
-	$html .= "<h1>文章列表</h1>";
-	$list_dir = $article;
-}
-// 访问某篇文章
-elseif( is_file( $article.".md" ) )
-{
-	$content = file_get_contents( $article.".md" );
-	$html    = $parser -> makeHtml( $content );
-}
-
-if( isset($list_dir) && !empty($list_dir) )
-{
-	$md_file_list = [];
-	$md_file_list = file_list( $list_dir );
-	$md_file_list = sort_file_list( $md_file_list );
 	$i = 0;
 	foreach( $md_file_list as $file )
 	{
@@ -129,7 +104,7 @@ if( isset( $_GET['ajax'] ) )
     include_once 'view/article.php';
 else
 {
-    $category = file_tree_print( file_tree( MD_ROOT ) , $current_article );
+    $category = file_tree_print( file_tree( MD_ROOT ) , $path_info );
     include_once 'view/index.php';
 }
 
