@@ -26,6 +26,24 @@ $IGNORE_DIR = [".git","img","android/java教程"];
 $IGNORE_FILE = ["link","default","xxx_dir/xxx_dir/file_name"];
 ```
 
+## Apache服务器配置注意点
+
+- 项目目录要设置成可以访问，并且允许使用`.htaccess`文件
+
+```
+<Directory /home/cky/workspace/>
+    Options Indexes FollowSymLinks
+    AllowOverride all 
+    Require all granted
+</Directory>
+```
+
+- 需要开启URL重写模块
+
+```
+sudo a2enmod  rewrite
+```
+
 ## 案例
 
 - [Codekissyoung Blog](https://blog.codekissyoung.com/)
