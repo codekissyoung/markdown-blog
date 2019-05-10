@@ -156,8 +156,10 @@ function file_tree_print($tree,$cf = '',$path = false)
 
 function debug($var)
 {
-	echo "<pre><code>";
-	print_r($var);
-	echo "</code></pre>";
-	exit;
+    if( is_string($var) )
+        $log = $var;
+    else
+        $log = json_encode( $var, JSON_PRETTY_PRINT );
+
+    file_put_contents( "debug.log",  $log, FILE_APPEND );
 }

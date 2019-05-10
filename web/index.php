@@ -1,38 +1,32 @@
 <?php
+error_reporting( E_ALL );
+
 include_once '../config.php';
 $parser  	  = new HyperDown\Parser();
 $host         = $_SERVER["HTTP_HOST"];
+$content      = "";
+$html         = "";
+$protocol     = @$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ?  'https://' : 'http://';
 
-$protocol = 'http://';
-if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' )
-    $protocol = 'https://';
-if( isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
-    $protocol = 'https://';
 
 $current_article = isset($_SERVER['PATH_INFO']) ? $_SERVER["PATH_INFO"] : '';
 
 $article_title = array_reverse(explode("/",$current_article))[0];
 $title = !empty($article_title) ? $article_title." | ".BLOG_TITLE : BLOG_TITLE; 
 
-// 加载url里路径指明的文章
-if( $current_article )
+
+if( $current_article )                                              // 加载url里路径指明的文章
 {
     $article = MD_ROOT."{$current_article}";
 }
-// 首页加载默认的自定义文章
-elseif( isset( $DEFAULT_ARTICLE ) && !empty( $DEFAULT_ARTICLE ) )
+elseif( isset( $DEFAULT_ARTICLE ) && !empty( $DEFAULT_ARTICLE ) )  // 首页加载默认的自定义文章
 {
 	$article = $DEFAULT_ARTICLE;
 }
-// 加载文章列表
-else
+else                                                                // 加载文章列表
 {
 	$article = '';
 }
-
-$content = "";
-$html    = "";
-
 
 // 首页
 if( !isset($article) || empty($article) ) 
@@ -92,7 +86,6 @@ if( isset($list_dir) && !empty($list_dir) )
 			$i++;
 		}
 	}
-
 }
 
 // 搜索全文
