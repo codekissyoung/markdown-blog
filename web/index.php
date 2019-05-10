@@ -59,7 +59,7 @@ elseif( is_dir( $file_path ) )
 			$html .= $text;
 			$i++;
 		}
-		
+
         $html .= "</div>";
 	}
 }
