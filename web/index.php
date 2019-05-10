@@ -57,9 +57,10 @@ elseif( is_dir( $file_path ) )
 				$text = "<p>文章无缩略内容。</p>";
 
 			$html .= $text;
-            $html .= "</div>";
 			$i++;
 		}
+		
+        $html .= "</div>";
 	}
 }
 
