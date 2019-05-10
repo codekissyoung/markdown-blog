@@ -3,22 +3,23 @@ $article_width: 1050px;
 $background_color: white;
 $border_line_color: #eee;
 $blog_topbar_color: #333;
-
+$code-keyword-color: #b31d28;
+$code-built-in-color: #24292e;
 
 // 标题字体 衬线体用于标题 装饰性强
 $title-font-family: 
-                    "sans",                 // ubuntu 下标题显示字体，暂时用sans，未找到更好的
-					"Times New Roman",
-					"STKaiti",              // Mac 楷体
-					"Kaiti";                // Windows 楷体
+"sans",                 // ubuntu 下标题显示字体，暂时用sans，未找到更好的
+"Times New Roman",
+"STKaiti",              // Mac 楷体
+"Kaiti";                // Windows 楷体
 
 // 正文字体 无衬线体 字体清晰 用于正文
 $content-font-family: 
-                      "sans",               // ubuntu 下正文显示效果最好的字体
-				      "Verdana",
-					  "Arial",
-				      "STXihei", 			// Mac 细黑
-					  "Microsoft YaHei";	// Windows 雅黑
+"sans",               // ubuntu 下正文显示效果最好的字体
+"Verdana",
+"Arial",
+"STXihei", 			// Mac 细黑
+"Microsoft YaHei";	// Windows 雅黑
 
 // 编程字体
 $code-font-family:
@@ -37,14 +38,14 @@ $code-font-family:
 /* 重写github-markdown样式 */
 .markdown-body {
 	font-family: $content-font-family;
-	font-weight:normal;
+	font-weight: normal;
 }
 
 .hljs-keyword{
-    color:#b31d28;
+    color:$code-keyword-color;
 }
 .hljs-built_in{
-    color:#24292e;
+    color: $code-built-in-color;
 }
 
 .hljs-function{
@@ -67,6 +68,7 @@ body
     a{
         color:black;
     }
+
     background: $background_color;
     position: fixed;
 	top:0;
@@ -137,7 +139,7 @@ body
                 }
                 input[type="submit"]
                 {
-                    border:0px;
+                    border:0;
                     padding-top:2px;
                     padding-bottom:2px;
                     font-weight:normal;
@@ -228,6 +230,7 @@ body
             h2{
                 border-bottom: 0px;
                 margin-bottom: 0px;
+                font-size: 18px;
             }
             p{
                 font-size:16px;
