@@ -481,6 +481,58 @@ body
     }
 }
 
+// 图床的样式
+#article-content .show-upload-img{
+    img{
+        max-height: 200px;
+        float: left;
+        //margin:5px;
+        display: inline-block;
+    }
+}
+
+.show-upload-img::after{
+    content:'.';
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+
+.img-markdown-text{
+    pre{
+        font-family: $code-font-family;
+    }
+}
+
+$upload-img-width:930px;
+.upload-img-btn{
+    button{
+        letter-spacing: 10px;
+        display: block;
+        font-size: 18px;
+        width: $upload-img-width;
+        margin: 10px auto;
+        height: 36px;
+        color: white;
+        background-color: #72d6ff;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    input{
+        display: none;
+    }
+}
+
+#article-content .markdown-text-pre{
+    box-sizing:border-box;
+    width:$upload-img-width;
+    margin: 5px 0px;
+    letter-spacing: 0px;
+}
+
 #site-footer{
     height: 200px;
 }

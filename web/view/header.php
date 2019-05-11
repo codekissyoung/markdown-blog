@@ -9,9 +9,6 @@
         <link href="/css/github.css" rel="stylesheet">
         <link href="/css/github-markdown.css" rel="stylesheet">
         <link href="/css/common.css" rel="stylesheet"/>
-        <script src="/js/jquery-3.4.1.min.js"></script>
-        <script src="/js/highlight.pack.js"></script>
-        <script src="/js/main.js"></script>
     </head>
     <body>
         <div id="site-category">
@@ -27,6 +24,9 @@
 							<a href="<?=$link['href']?>" ><?=$link['name'] ?></a>
 						</li>
 						<?php endforeach; ?>
+                        <li>
+                           <a href="?upload_img=1">图床</a>
+                        </li>
 					</ul>
 					<?php endif;?>
                 </div>

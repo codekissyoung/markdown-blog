@@ -1,5 +1,7 @@
 <?php
 error_reporting( E_ALL );
+//header( "Access-Control-Allow-Origin:*" );
+//header( "Access-Control-Allow-Methods:POST,GET" );
 
 /******************************** config ***************************/
 include_once '../config.php';
@@ -67,7 +69,7 @@ elseif( is_dir( $file_path ) )
 // 搜索全文
 $search_key = isset($_GET['search_key']) ? $_GET['search_key'] : '';
 if( $search_key )
-{/*{{{*/
+{
     $html 	   = "<h1>搜索结果</h1>";
     $last_h2   = "";
     $li_list   = "";
@@ -98,11 +100,22 @@ if( $search_key )
     {
         $html = "未能搜索到 <span class=search_key>".$search_key."</span>";
     }
-}/*}}}*/
+}
 
-// 视图
+
+/*********************************** view ***************************************/
+// 上传图片
+$is_upload_img = isset( $_GET['upload_img']) ? $_GET['upload_img'] : '';
+if( $is_upload_img )
+{
+    $html 	   = "<h1>博客图床</h1>";
+    include_once "view/upload_img.php";
+    exit();
+}
 if( isset( $_GET['ajax'] ) )
+{
     include_once 'view/article.php';
+}
 else
 {
     $category = file_tree_print( file_tree( MD_ROOT ) , $path_info );
