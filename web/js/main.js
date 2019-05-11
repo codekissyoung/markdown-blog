@@ -153,7 +153,7 @@ $(function(){
 
         form.append("blog_img", fileObj); // 文件对象
 
-        xhr.open("post","http://img.codekissyoung.com", true );
+        xhr.open("post","https://img.codekissyoung.com", true );
 
         xhr.send(form);
 
