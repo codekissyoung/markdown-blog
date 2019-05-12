@@ -149,8 +149,6 @@ $(function(){
         let form    = new FormData();
         let xhr     = new XMLHttpRequest();
 
-        console.log( fileObj );
-
         form.append("blog_img", fileObj); // 文件对象
 
         xhr.open("post","https://img.codekissyoung.com", true );
@@ -164,7 +162,7 @@ $(function(){
                 let res = eval(xhr.responseText);
                 let img_div = "";
                 let md_text = "";
-                for( var i = 0; i < res.length; i++ )
+                for( let i = 0; i < res.length; i++ )
                 {
                     img_div += "<img src='" + res[i] + "' />";
                     md_text += "<pre class='markdown-text-pre'><span>![" + fileObj.name + "](" + res[i] + ")\n</span></pre>";
