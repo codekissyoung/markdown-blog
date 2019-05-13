@@ -284,9 +284,8 @@ body
     ol,ul{
 		font-size: 15px;
 		margin-left:1.4em;
-        margin:0px 18px;
-        padding-left:20px;
-        margin-bottom:18px;
+        padding-left:18px;
+        margin:0px 0px 18px 18px;
     }
 
 	ul.search-list-ul{
@@ -294,10 +293,13 @@ body
 	}
 
     li{
+        margin:0px;
         p{
             text-indent:0em;
             padding:0px;
             margin:0px;
+            font-size: 15px;
+            letter-spacing: 1px;
         }
 		ol,ul{
 			margin-left:0em;
@@ -325,12 +327,11 @@ body
     }
     p{
         margin-bottom:10px;
-        line-height:1.5;
+        line-height:1.4;
         text-align:justify;
-        font-size:17px;
+        font-size:16px;
         letter-spacing: 1px;
         padding:0px 0px;
-        // text-indent:2em;
         code{
             color:#e36209;
             font-size:15px;
@@ -364,7 +365,7 @@ body
 
     // 表格
     table
-    {// {{{
+    {
 		display:table;
 		margin:10px auto;
         thead
@@ -380,7 +381,7 @@ body
             padding:5px 10px;
             border:1px solid #eee;
         }
-    }// }}}
+    }
 
 }
 
