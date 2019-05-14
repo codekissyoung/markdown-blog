@@ -129,11 +129,9 @@ body
                 input[type="text"]{
                     width:180px;
                     height: 20px;
-                    padding: 0;
-                    padding-left:4px;
-                    margin: 0px;
-                    padding-right: 4px;
+                    padding: 0px 4px;
                     border:0px;
+                    margin: 0px;
                     color: #666;
                     outline: none;
                     letter-spacing: 1px;
@@ -247,7 +245,8 @@ body
         font-size:19px;
         margin-top:30px;
         text-indent:0em;
-        margin-bottom:12px;
+        margin-bottom:14px;
+        color:#00a5f7;
     }
     h4{
         font-size:18px;
@@ -268,7 +267,7 @@ body
         color: #00a5f7;
     }
     pre{
-        max-height: 200px;
+        max-height: 360px;
         margin-bottom:16px;
         background-color:#f6f8fa;
         padding:10px;
@@ -283,10 +282,8 @@ body
     }
     ol,ul{
 		font-size: 15px;
-		margin-left:1.4em;
-        margin:0px 18px;
-        padding-left:20px;
-        margin-bottom:18px;
+        padding-left:18px;
+        margin:0px 0px 18px 18px;
     }
 
 	ul.search-list-ul{
@@ -294,10 +291,13 @@ body
 	}
 
     li{
+        margin:0px;
         p{
             text-indent:0em;
             padding:0px;
             margin:0px;
+            font-size: 15px;
+            letter-spacing: 1px;
         }
 		ol,ul{
 			margin-left:0em;
@@ -310,7 +310,6 @@ body
         background:#F0F0F0;
         p{
 			font-size:15px;
-            padding:3px 0px;
             text-indent:0em;
 			line-height:1.5;
             margin:0px;
@@ -327,10 +326,9 @@ body
         margin-bottom:10px;
         line-height:1.5;
         text-align:justify;
-        font-size:17px;
+        font-size:16px;
         letter-spacing: 1px;
         padding:0px 0px;
-        // text-indent:2em;
         code{
             color:#e36209;
             font-size:15px;
@@ -364,7 +362,7 @@ body
 
     // 表格
     table
-    {// {{{
+    {
 		display:table;
 		margin:10px auto;
         thead
@@ -380,7 +378,7 @@ body
             padding:5px 10px;
             border:1px solid #eee;
         }
-    }// }}}
+    }
 
 }
 
@@ -395,8 +393,6 @@ body
     background-color: $background_color;
     // opacity:0.9;
     z-index:1;
-    top:0px;
-    left: 0px;
     width: $main-category-width;
 	#main-category-title{
 		height:40px;

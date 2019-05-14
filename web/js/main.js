@@ -137,6 +137,11 @@ $(function(){
 		$(this).nextUntil("h2").toggle();
 	});//}}}
 
+    // 点击代码的 pre 后，代码展开
+    $("#article-content pre").on("click", function(){
+        $(this).css( "max-height", "none" );
+    });
+
     // 图床功能
     $(".upload-img-btn button").on("click",function () {
         console.log("btn click");
@@ -157,7 +162,7 @@ $(function(){
 
         xhr.onreadystatechange = function ()
         {
-            if( xhr.readyState ==  4 && xhr.status == 200 )
+            if( xhr.readyState ===  4 && xhr.status === 200 )
             {
                 let res = eval(xhr.responseText);
                 let img_div = "";
@@ -171,7 +176,7 @@ $(function(){
                 $(".show-upload-img").append( img_div );
                 $(".img-markdown-text").append( md_text );
             }
-            if( xhr.status == 400 || xhr.status == 500 )
+            if( xhr.status === 400 || xhr.status === 500 )
             {
                 alert("上传出错!");
             }
