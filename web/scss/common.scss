@@ -268,6 +268,7 @@ body
         color: #00a5f7;
     }
     pre{
+        max-height: 200px;
         margin-bottom:16px;
         background-color:#f6f8fa;
         padding:10px;
@@ -276,7 +277,6 @@ body
         code{
             width:100%;
 			font-family: $code-font-family;
-            line-height: 1;
             font-size: 14px;
             letter-spacing:0px;
         }

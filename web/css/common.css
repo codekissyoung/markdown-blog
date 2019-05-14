@@ -184,6 +184,7 @@ body {
   #article-content a {
     color: #00a5f7; }
   #article-content pre {
+    max-height: 200px;
     margin-bottom: 16px;
     background-color: #f6f8fa;
     padding: 10px;
@@ -192,7 +193,6 @@ body {
     #article-content pre code {
       width: 100%;
       font-family: "ubuntu mono", "consolas", "monaco";
-      line-height: 1;
       font-size: 14px;
       letter-spacing: 0px; }
   #article-content ol, #article-content ul {
