@@ -138,7 +138,7 @@ $(function(){
 	});//}}}
 
     // 点击代码的 pre 后，代码展开
-    $("#article-content pre").on("click", function(){
+    $("#article-content").on("click", "pre", function(){
         $(this).css( "max-height", "none" );
     });
 
