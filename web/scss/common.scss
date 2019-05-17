@@ -268,11 +268,11 @@ body
     }
     pre{
         max-height: 360px;
-        margin-bottom:16px;
+        margin:0px 10px 16px 10px;
         background-color:#f6f8fa;
-        padding:10px;
+        padding:14px;
         overflow:auto;
-        border-radius:5px;
+        border-radius:12px;
         code{
             width:100%;
 			font-family: $code-font-family;
@@ -296,8 +296,7 @@ body
             text-indent:0em;
             padding:0px;
             margin:0px;
-            font-size: 15px;
-            letter-spacing: 1px;
+            font-size: 16px;
         }
 		ol,ul{
 			margin-left:0em;
@@ -323,18 +322,16 @@ body
 		}
     }
     p{
-        margin-bottom:10px;
         line-height:1.5;
         text-align:justify;
-        font-size:16px;
-        letter-spacing: 1px;
+        font-size:17px;
+        margin:18px 0px;
         padding:0px 0px;
         code{
             color:#e36209;
-            font-size:15px;
-            margin:0px 2px;
             border-radius: 4px;
-            padding: 3px 6px;
+            padding: 0px 6px;
+            margin:0px 4px;
 			font-family: $code-font-family;
         }
         strong{
@@ -346,7 +343,6 @@ body
                 color:rgb( 36, 41, 46);
                 padding:0px;
                 background-color:white;
-                font-size:17px;
             }
         }
     }
@@ -381,7 +377,6 @@ body
     }
 
 }
-
 
 #main_category
 {
