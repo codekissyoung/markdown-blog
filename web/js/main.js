@@ -98,7 +98,7 @@ $(function(){
 
     // 点击显示目录
     $("#article-category-button").on("click",function(){//{{{
-        $('#main_category').animate({width:'toggle'},300);
+        $('#main_category').animate({width:'toggle'},100);
     });//}}}
 
     // 鼠标移出目录div
