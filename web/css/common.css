@@ -23,7 +23,8 @@
   font-weight: normal; }
 
 body {
-  margin-top: -20px; }
+  margin-top: -20px;
+  background-color: #f6f6f6; }
 
 #site-category {
   background: white;
@@ -32,7 +33,7 @@ body {
   z-index: 10;
   width: 100%;
   height: 50px;
-  box-shadow: 0 1px 5px darkgrey; }
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1); }
   #site-category a:active {
     color: black; }
   #site-category a {
@@ -109,7 +110,7 @@ body {
   margin-top: 80px;
   overflow: hidden;
   position: relative;
-  border: 1px solid #eee; }
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1); }
   #article a {
     text-decoration: none; }
   #article #article-category-button {
