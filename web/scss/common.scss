@@ -1,5 +1,5 @@
 /* 变量定义 */
-$article_width: 1050px;
+$article_width: 980px;
 $background_color: white;
 $border_line_color: #eee;
 $blog_topbar_color: #333;
@@ -209,7 +209,7 @@ body
 
 #article-content
 {
-    padding:20px 60px 100px 60px;
+    padding:20px 50px 100px 50px;
     box-sizing:border-box;
     letter-spacing:1px;
     min-height:1000px;
@@ -227,7 +227,7 @@ body
     h2{
         font-size:22px;
 		cursor:pointer;
-        margin:22px 0px 10px 0px;
+        margin:40px 0px 10px 0px;
         border-bottom: 1px solid #eaecef;
     }
     .markdown-body{
@@ -244,15 +244,14 @@ body
         }
     }
 	h3,h4,h5{
-		text-indent:2em;
+		text-indent:0em;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
     h3{
         font-size:19px;
-        margin-top:30px;
-        text-indent:0em;
-        margin-bottom:14px;
+        margin-top:20px;
+        margin-bottom:10px;
         color:#00a5f7;
     }
     h4{
@@ -274,8 +273,7 @@ body
         color: #00a5f7;
     }
     pre{
-        max-height: 400px;
-        margin:0px 10px 16px 10px;
+        max-height: 500px;
         background-color:#f6f8fa;
         padding:14px;
         overflow:auto;
@@ -346,6 +344,9 @@ body
             margin-left:2px;
             margin-right:2px;
             font-weight:bold;
+
+            font-family: $code-font-family;
+
             code{
                 color:rgb( 36, 41, 46);
                 padding:0px;
@@ -483,6 +484,7 @@ body
 #article-content .show-upload-img{
     img{
         max-height: 200px;
+        margin-left:10px;
         float: left;
         //margin:5px;
         display: inline-block;
@@ -503,7 +505,30 @@ body
     }
 }
 
-$upload-img-width:930px;
+.markdown-url-input{
+    border:1px solid #dfe2e5;
+    margin:16px 0px;
+    input{
+        width:93%;
+        color:#666;
+        outline:none;
+        border:0px;
+    }
+    button{
+        margin:0px;
+        width:6%;
+        color:#666;
+        cursor:pointer;
+        border:0px;
+        padding:0px;
+        line-height:1.6;
+        letter-spacing:1px;
+        border-left:1px solid #dfe2e5;
+        background-color:white;
+    }
+}
+
+$upload-img-width:100%;
 .upload-img-btn{
     button{
         letter-spacing: 10px;

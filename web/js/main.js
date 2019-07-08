@@ -144,7 +144,6 @@ $(function(){
 
     // 图床功能
     $(".upload-img-btn button").on("click",function () {
-        console.log("btn click");
         $("#file").click();
     });
 
@@ -157,24 +156,30 @@ $(function(){
         form.append("blog_img", fileObj); // 文件对象
 
         xhr.open("post","https://img.codekissyoung.com", true );
-
         xhr.send(form);
-
         xhr.onreadystatechange = function ()
         {
             if( xhr.readyState ===  4 && xhr.status === 200 )
             {
+
                 let res = eval(xhr.responseText);
                 let img_div = "";
                 let md_text = "";
                 for( let i = 0; i < res.length; i++ )
                 {
                     img_div += "<img src='" + res[i] + "' />";
-                    md_text += "<pre class='markdown-text-pre'><span>![" + fileObj.name + "](" + res[i] + ")\n</span></pre>";
+
+                    let markdown_text = "![" + fileObj.name + "](" + res[i] + ")";
+                    let timestamp = Date.parse(new Date());
+                    let id_name = "id" + timestamp;
+                    md_text += "<div class='markdown-url-input'><input id='"+ id_name + "' value='" + markdown_text + "'> <button class='clipboard-btn' data-clipboard-target='#" + id_name + "'>复制</button></div>";
                 }
 
                 $(".show-upload-img").append( img_div );
                 $(".img-markdown-text").append( md_text );
+                
+                // 启用拷贝到粘贴板功能
+                new ClipboardJS('.clipboard-btn');
             }
             if( xhr.status === 400 || xhr.status === 500 )
             {

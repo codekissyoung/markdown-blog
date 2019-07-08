@@ -9,6 +9,11 @@
         <link href="/css/github.css" rel="stylesheet">
         <link href="/css/github-markdown.css" rel="stylesheet">
         <link href="/css/common.css" rel="stylesheet"/>
+        <script type='text/javascript'>
+        !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+          gio('init','afb224dd6d58e214', {});
+        gio('send');
+        </script>
     </head>
     <body>
         <div id="site-category">
