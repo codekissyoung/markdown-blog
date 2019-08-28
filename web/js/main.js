@@ -155,7 +155,8 @@ $(function(){
 
         form.append("blog_img", fileObj); // 文件对象
 
-        xhr.open("post","https://img.codekissyoung.com", true );
+        // 本来是使用https上传图片的，但域名的证书是免费的，谷歌浏览器上传经常有问题，所以改用http
+        xhr.open("post","http://img.codekissyoung.com", true );
         xhr.send(form);
         xhr.onreadystatechange = function ()
         {
