@@ -35,9 +35,6 @@ $(function(){
         $("#article-category-button").css("left", left );
     }
 
-
-
-
     /******************* bind event *********************/
     // 异步加载文章
     $('#main_category a').on('click',function(){//{{{
@@ -156,13 +153,17 @@ $(function(){
         form.append("blog_img", fileObj); // 文件对象
 
         // 本来是使用https上传图片的，但域名的证书是免费的，谷歌浏览器上传经常有问题，所以改用http
-        xhr.open("post","http://img.codekissyoung.com", true );
-        xhr.send(form);
+        xhr.open( "post", "https://img.codekissyoung.com", true );
+        xhr.send( form );
+        console.log("rdy to send!");
         xhr.onreadystatechange = function ()
         {
+            console.log( xhr.readyState );
+            console.log( xhr.status );
+
+            console.log( xhr.responseText );
             if( xhr.readyState ===  4 && xhr.status === 200 )
             {
-
                 let res = eval(xhr.responseText);
                 let img_div = "";
                 let md_text = "";
@@ -182,9 +183,12 @@ $(function(){
                 // 启用拷贝到粘贴板功能
                 new ClipboardJS('.clipboard-btn');
             }
-            if( xhr.status === 400 || xhr.status === 500 )
+            else if( xhr.status === 400 || xhr.status === 500 )
             {
                 alert("上传出错!");
+            }
+            else{
+                console.log( "status : " + xhr.status );
             }
         }
     });
