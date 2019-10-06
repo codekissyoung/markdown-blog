@@ -42,7 +42,7 @@ body {
 #site-category a {
   color: black; }
 #site-category #site-category-content {
-  width: 900px;
+  width: 980px;
   margin: 0 auto;
   position: relative;
   height: 100%; }
@@ -108,7 +108,7 @@ body {
   text-align: center; }
 
 #article {
-  width: 900px;
+  width: 980px;
   margin: 0px auto;
   margin-top: 80px;
   overflow: hidden;
