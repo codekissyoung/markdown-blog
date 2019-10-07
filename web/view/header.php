@@ -20,12 +20,11 @@
 					<ul>
 						<?php foreach( $BLOG_CATEGORY_LINK as $link ): ?>
 						<li>
-							<a href="<?=$link['href']?>" ><?=$link['name'] ?></a>
+                            <a href="<?=$link['href']?>" target="_blank" >
+                                <?=$link['name'] ?>
+                            </a>
 						</li>
 						<?php endforeach; ?>
-                        <li>
-                           <a href="?upload_img=1">图床</a>
-                        </li>
 					</ul>
 					<?php endif;?>
                 </div>
