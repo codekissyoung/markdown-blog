@@ -1,5 +1,5 @@
 /* 变量定义 */
-$article_width: 980px;
+$article_width: 1020px;
 $background_color: white;
 $border_line_color: #eee;
 $blog_topbar_color: #333;
@@ -209,7 +209,7 @@ body
 
 #article-content
 {
-    padding:20px 50px 100px 50px;
+    padding:20px 65px 100px 65px;
     box-sizing:border-box;
     letter-spacing:1px;
     min-height:1000px;
@@ -281,7 +281,7 @@ body
         code{
             width:100%;
 			font-family: $code-font-family;
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing:0px;
         }
     }
@@ -296,12 +296,16 @@ body
 	}
 
     li{
-        margin:0px;
+        margin:9px 0px;
         p{
+            letter-spacing:1px;
             text-indent:0em;
             padding:0px;
             margin:0px;
             font-size: 16px;
+            code{
+                font-size:16px;
+            }
         }
 		ol,ul{
 			margin-left:0em;
@@ -327,16 +331,20 @@ body
 		}
     }
     p{
-        line-height:1.5;
+        line-height:1.7;
         text-align:justify;
         font-size:17px;
         margin:18px 0px;
         padding:0px 0px;
+        letter-spacing:1px; 
         code{
-            color:#e36209;
-            border-radius: 4px;
-            padding: 0px 6px;
-            margin:0px 4px;
+            text-decoration:none;
+            // border-bottom:1px dashed orange;
+            color:#930ee4;
+            font-size:17px;
+            //color:#e36209;
+            //border-radius: 4px;
+            //padding: 0px 6px;
 			font-family: $code-font-family;
         }
         strong{

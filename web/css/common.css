@@ -42,7 +42,7 @@ body {
 #site-category a {
   color: black; }
 #site-category #site-category-content {
-  width: 980px;
+  width: 1020px;
   margin: 0 auto;
   position: relative;
   height: 100%; }
@@ -108,7 +108,7 @@ body {
   text-align: center; }
 
 #article {
-  width: 980px;
+  width: 1020px;
   margin: 0px auto;
   margin-top: 80px;
   overflow: hidden;
@@ -136,7 +136,7 @@ body {
   text-decoration: none; }
 
 #article-content {
-  padding: 20px 50px 100px 50px;
+  padding: 20px 65px 100px 65px;
   box-sizing: border-box;
   letter-spacing: 1px;
   min-height: 1000px;
@@ -194,7 +194,7 @@ body {
 #article-content pre code {
   width: 100%;
   font-family: "ubuntu mono", "consolas", "monaco";
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0px; }
 #article-content ol, #article-content ul {
   font-size: 15px;
@@ -203,11 +203,14 @@ body {
 #article-content ul.search-list-ul {
   margin: 0px; }
 #article-content li {
-  margin: 0px; }
+  margin: 9px 0px; }
 #article-content li p {
+  letter-spacing: 1px;
   text-indent: 0em;
   padding: 0px;
   margin: 0px;
+  font-size: 16px; }
+#article-content li p code {
   font-size: 16px; }
 #article-content li ol, #article-content li ul {
   margin-left: 0em; }
@@ -227,16 +230,16 @@ body {
 #article-content blockquote ul li {
   margin: 0px; }
 #article-content p {
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   font-size: 17px;
   margin: 18px 0px;
-  padding: 0px 0px; }
+  padding: 0px 0px;
+  letter-spacing: 1px; }
 #article-content p code {
-  color: #e36209;
-  border-radius: 4px;
-  padding: 0px 6px;
-  margin: 0px 4px;
+  text-decoration: none;
+  color: #930ee4;
+  font-size: 17px;
   font-family: "ubuntu mono", "consolas", "monaco"; }
 #article-content p strong {
   color: #24292e;
