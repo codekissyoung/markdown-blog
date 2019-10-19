@@ -9,7 +9,7 @@
 
 /* 重写github-markdown样式 */
 .markdown-body {
-  font-family: "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+  font-family: "lucida grande", "lucida sans unicode", "lucida", "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
   font-weight: normal; }
 
 .hljs-keyword {
@@ -23,6 +23,7 @@
   font-weight: normal; }
 
 body {
+  overflow-y: scroll;
   margin-top: -20px;
   background-color: #f6f6f6;
   background-repeat: repeat;
@@ -145,15 +146,17 @@ body {
   display: block;
   font-family: "sans", "Times New Roman", "STKaiti", "Kaiti"; }
 #article-content h1 {
-  font-size: 28px;
-  border-bottom: 2px solid lightgray;
+  color: #666;
+  font-size: 30px;
+  border-bottom: 3px solid lightgray;
   letter-spacing: 3px;
   padding-top: 30px; }
 #article-content h2 {
-  font-size: 22px;
+  color: #666;
+  font-size: 24px;
   cursor: pointer;
   margin: 40px 0px 10px 0px;
-  border-bottom: 1px solid #eaecef; }
+  border-bottom: 2px solid #eaecef; }
 #article-content .markdown-body .article-summary-list {
   border-bottom: 1px solid #eaecef; }
 #article-content .markdown-body .article-summary-list h2 {
@@ -163,24 +166,25 @@ body {
 #article-content .markdown-body .article-summary-list p {
   font-size: 16px; }
 #article-content h3, #article-content h4, #article-content h5 {
+  color: #666;
   text-indent: 0em;
   margin-top: 10px;
   margin-bottom: 10px; }
 #article-content h3 {
-  font-size: 19px;
+  font-size: 20px;
   margin-top: 20px;
-  margin-bottom: 10px;
-  color: #00a5f7; }
+  margin-bottom: 10px; }
 #article-content h4 {
   font-size: 18px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #6f42c1; }
 #article-content h5 {
   font-size: 18px;
   margin-top: 20px;
   margin-bottom: 5px; }
 #article-content .article-create-time {
   font-size: 13px;
-  font-family: "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei";
+  font-family: "lucida grande", "lucida sans unicode", "lucida", "sans", "Verdana", "Arial", "STXihei", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
   font-weight: 300;
   color: #999; }
 #article-content a {
@@ -230,16 +234,19 @@ body {
 #article-content blockquote ul li {
   margin: 0px; }
 #article-content p {
-  line-height: 1.7;
+  line-height: 1.8;
   text-align: justify;
-  font-size: 17px;
   margin: 18px 0px;
   padding: 0px 0px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 17px; }
 #article-content p code {
+  padding: 0px 2px;
+  padding-bottom: 2px;
+  background: none;
   text-decoration: none;
-  color: #930ee4;
-  font-size: 17px;
+  border-bottom: 1px dashed #930ee4;
+  font-size: 18px;
   font-family: "ubuntu mono", "consolas", "monaco"; }
 #article-content p strong {
   color: #24292e;
@@ -286,7 +293,7 @@ body {
   font-size: 34px; }
 #main_category #main-category-content {
   width: 330px;
-  overflow: auto;
+  overflow-y: scroll;
   height: 100%;
   padding-bottom: 200px;
   border-bottom: 1px solid #ddd; }
@@ -317,7 +324,7 @@ body {
   font-size: 15px;
   letter-spacing: 2px; }
 #main_category a.active {
-  color: #990033;
+  color: #6f42c1;
   font-weight: bold; }
 #main_category ul, #main_category li {
   text-decoration: none;

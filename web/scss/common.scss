@@ -16,11 +16,17 @@ $title-font-family:
 
 // 正文字体 无衬线体 字体清晰 用于正文
 $content-font-family: 
+"lucida grande",
+"lucida sans unicode",
+"lucida",
 "sans",               // ubuntu 下正文显示效果最好的字体
 "Verdana",
 "Arial",
 "STXihei", 			// Mac 细黑
-"Microsoft YaHei";	// Windows 雅黑
+"Microsoft YaHei",	// Windows 雅黑
+"WenQuanYi Micro Hei", 
+'sans-serif';
+
 
 // 编程字体
 $code-font-family:
@@ -58,6 +64,7 @@ $code-font-family:
 
 body
 {
+    overflow-y:scroll;
     margin-top: -20px;
     background-color: #f6f6f6; // 知乎的背景颜色
     // background-image: url( "/img/bg04.gif" );
@@ -219,16 +226,18 @@ body
         font-family:$title-font-family;
     }
     h1{
-        font-size:28px;
-        border-bottom:2px solid rgb(211,211,211);
+        color:#666;
+        font-size:30px;
+        border-bottom:3px solid rgb(211,211,211);
         letter-spacing:3px; 
         padding-top:30px;
     }
     h2{
-        font-size:22px;
+        color:#666;
+        font-size:24px;
 		cursor:pointer;
         margin:40px 0px 10px 0px;
-        border-bottom: 1px solid #eaecef;
+        border-bottom: 2px solid #eaecef;
     }
     .markdown-body{
         .article-summary-list{
@@ -244,19 +253,21 @@ body
         }
     }
 	h3,h4,h5{
+        color:#666;
 		text-indent:0em;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
     h3{
-        font-size:19px;
+        font-size:20px;
         margin-top:20px;
         margin-bottom:10px;
-        color:#00a5f7;
     }
     h4{
         font-size:18px;
         margin-top: 20px;
+        // color:#00a5f7; // 蓝色
+        color:#6f42c1;  // 紫色
     }
     h5{
         font-size:18px;
@@ -331,17 +342,20 @@ body
 		}
     }
     p{
-        line-height:1.7;
+        line-height:1.8;
         text-align:justify;
-        font-size:17px;
         margin:18px 0px;
         padding:0px 0px;
         letter-spacing:1px; 
+        font-size:17px;
         code{
+            padding:0px 2px;
+            padding-bottom:2px;
+            background:none;
             text-decoration:none;
-            // border-bottom:1px dashed orange;
-            color:#930ee4;
-            font-size:17px;
+            border-bottom:1px dashed #930ee4;
+            // color:#930ee4;
+            font-size:18px;
             //color:#e36209;
             //border-radius: 4px;
             //padding: 0px 6px;
@@ -417,7 +431,7 @@ body
 	}
     #main-category-content{
         width:$main-category-width;
-        overflow:auto;
+        overflow-y: scroll;
         height: 100%;
         padding-bottom: 200px;
         border-bottom: 1px solid #ddd;
@@ -457,7 +471,8 @@ body
         letter-spacing:2px;
     }
     a.active{
-        color:#990033;
+        //color:#990033;
+        color:#6f42c1;
         font-weight: bold;
     }
     ul,li{
