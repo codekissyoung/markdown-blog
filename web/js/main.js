@@ -22,10 +22,12 @@ $(function(){
     // 目录高度的动态变化
     function set_category_height()
     {
-        let article_height = $("#article-content").height() - 200 + 40; // 40 为araticle的padding值
+        let article_height = $("#article-content").height() + 40; // 40 为araticle的padding值
         let window_height = $(window).height() - 200 - 53;
         // 取两者的较小者 作为目录的高度
         let height = window_height < article_height ? window_height : article_height;
+        console.log( "window_height: " + window_height );
+        console.log( "article_height: " + article_height );
         $("#main-category-content").css("height", height + 'px');
     }
 
@@ -144,7 +146,8 @@ $(function(){
         $("#file").click();
     });
 
-    $("#file").on("change",function(){
+    // 上传图片
+    $("#file").on("change",function(){//{{{
 
         let fileObj = document.getElementById("file").files[0];
         let form    = new FormData();
@@ -191,7 +194,7 @@ $(function(){
                 console.log( "status : " + xhr.status );
             }
         }
-    });
+    });//}}}
 
     /************** run when document loaded ************/
     // markdown生成的所有a链接全在新标签页打开 
