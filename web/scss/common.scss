@@ -284,7 +284,7 @@ body
         color: #00a5f7;
     }
     pre{
-        max-height: 500px;
+        max-height: 700px;
         background-color:#f6f8fa;
         padding:14px;
         overflow:auto;
@@ -349,13 +349,14 @@ body
         letter-spacing:1px; 
         font-size:17px;
         code{
-            padding:0px 2px;
-            padding-bottom:2px;
-            background:none;
+            font-size:17px;
+            background-color:#f6f6f6;
+            // padding:0px 2px;
+            // padding-bottom:2px;
+            // background:none;
             text-decoration:none;
-            border-bottom:1px dashed #930ee4;
-            // color:#930ee4;
-            font-size:18px;
+            // border-bottom:1px dashed #930ee4;
+            color:#930ee4;
             //color:#e36209;
             //border-radius: 4px;
             //padding: 0px 6px;
