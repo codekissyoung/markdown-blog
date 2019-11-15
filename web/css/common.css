@@ -264,6 +264,9 @@ body {
 #article-content table {
   display: table;
   margin: 10px auto; }
+#article-content table img {
+  border: 0px solid #eaecef;
+  border-radius: 6px; }
 #article-content table thead {
   background-color: #ddd; }
 #article-content table th {
@@ -271,6 +274,8 @@ body {
 #article-content table th, #article-content table td {
   padding: 5px 10px;
   border: 1px solid #eee; }
+#article-content table tr {
+  background-color: white; }
 
 #main_category {
   position: absolute;

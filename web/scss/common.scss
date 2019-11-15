@@ -392,6 +392,12 @@ body
     {
 		display:table;
 		margin:10px auto;
+        img{
+            // display:block;
+            // margin:10px auto;
+            border:0px solid rgb(234,236,239);
+            border-radius: 6px;
+        }
         thead
         {
             background-color:#ddd;
@@ -405,8 +411,10 @@ body
             padding:5px 10px;
             border:1px solid #eee;
         }
+        tr{
+            background-color:white;
+        }
     }
-
 }
 
 #main_category
