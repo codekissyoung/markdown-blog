@@ -41,7 +41,7 @@ elseif( is_dir( $file_path ) )
 		$article_name = $paths[ $cnt - 1 ];
 		$semantic_time = semantic_time( $file['time'] );
         $html .= "<div class=article-summary-list>";
-		$html     .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}</span></h2>";
+		$html .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}</span></h2>";
 
 		if( $i < 50 )
 		{
