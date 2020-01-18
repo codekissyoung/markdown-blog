@@ -323,10 +323,9 @@ body
 		}
     }
     blockquote{
-        margin: 0px 32px;
-        margin-bottom:16px;
+        margin: 0px 0px;
 		padding:8px 0px;
-        background:#F0F0F0;
+        background:#F6f8fa;
         p{
 			font-size:15px;
             text-indent:0em;
@@ -356,8 +355,7 @@ body
             // background:none;
             text-decoration:none;
             // border-bottom:1px dashed #930ee4;
-            color:#930ee4;
-            //color:#e36209;
+            color:#dd1144;
             //border-radius: 4px;
             //padding: 0px 6px;
 			font-family: $code-font-family;

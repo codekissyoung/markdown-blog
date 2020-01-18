@@ -219,10 +219,9 @@ body {
 #article-content li ol, #article-content li ul {
   margin-left: 0em; }
 #article-content blockquote {
-  margin: 0px 32px;
-  margin-bottom: 16px;
+  margin: 0px 0px;
   padding: 8px 0px;
-  background: #F0F0F0; }
+  background: #F6f8fa; }
 #article-content blockquote p {
   font-size: 15px;
   text-indent: 0em;
@@ -244,7 +243,7 @@ body {
   font-size: 17px;
   background-color: #f6f6f6;
   text-decoration: none;
-  color: #930ee4;
+  color: #dd1144;
   font-family: "ubuntu mono", "consolas", "monaco"; }
 #article-content p strong {
   color: #24292e;
