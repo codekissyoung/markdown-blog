@@ -267,7 +267,8 @@ body
         font-size:18px;
         margin-top: 20px;
         // color:#00a5f7; // 蓝色
-        color:#6f42c1;  // 紫色
+        // color:#6f42c1;  // 紫色
+        color:#70aaff;    // 淡蓝色
     }
     h5{
         font-size:18px;
@@ -376,8 +377,8 @@ body
         }
     }
     img{
-        // display:block;
-        // margin:10px auto;
+        display:block;
+        margin:10px auto;
         border:1px solid rgb(234,236,239);
         border-radius: 6px;
     }
