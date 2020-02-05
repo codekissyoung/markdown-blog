@@ -12,11 +12,15 @@ $parser  	  = new HyperDown\Parser();
 /******************************** env   ***************************/
 $host               = $_SERVER["HTTP_HOST"];
 $protocol           = @$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ?  'https://' : 'http://';
-$path_info          = isset($_SERVER['PATH_INFO']) ? $_SERVER["PATH_INFO"] : '';
+
+$path_info          = $_SERVER['REQUEST_URI'];
+$path_info          = explode('?', $path_info)[0];
+$path_info          = urldecode($path_info);
+
 $last_path_info_str = array_reverse(explode("/",$path_info))[0];
 $site_title         = !empty($last_path_info_str) ? $last_path_info_str." | ".BLOG_TITLE : BLOG_TITLE;
 $file_path          = MD_ROOT."{$path_info}";
-
+$file_path          = str_replace('//', '/', $file_path);
 
 // 文章
 if( is_file( $file_path.".md" ) )
