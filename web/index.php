@@ -1,24 +1,29 @@
 <?php
-error_reporting( E_ALL );
-// header( "Access-Control-Allow-Origin: *" );
-// header( "Access-Control-Allow-Methods: *" );
-
-/******************************** config ***************************/
 include_once '../config.php';
+
+error_reporting( E_ALL );
+session_start();
+header( "Access-Control-Allow-Origin: *" );
+header( "Access-Control-Allow-Methods: *" );
 
 /******************************** libs   ***************************/
 $parser  	  = new HyperDown\Parser();
 
 /******************************** env   ***************************/
 $host               = $_SERVER["HTTP_HOST"];
-$protocol           = @$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ?  'https://' : 'http://';
+$protocol = "http://";
+if(@$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'){
+    $protocol = "https://";
+}
+list($path_info, $query_str) = explode('?', urldecode($_SERVER['REQUEST_URI']));
 
-$path_info          = $_SERVER['REQUEST_URI'];
-$path_info          = explode('?', $path_info)[0];
-$path_info          = urldecode($path_info);
-
+//exit();
+$site_title = BLOG_TITLE;
 $last_path_info_str = array_reverse(explode("/",$path_info))[0];
-$site_title         = !empty($last_path_info_str) ? $last_path_info_str." | ".BLOG_TITLE : BLOG_TITLE;
+if(!empty($last_path_info_str)){
+    $site_title = $last_path_info_str." | ".BLOG_TITLE;
+}
+
 $file_path          = MD_ROOT."{$path_info}";
 $file_path          = str_replace('//', '/', $file_path);
 
@@ -77,7 +82,8 @@ if( $search_key )
     $html 	   = "<h1>搜索结果</h1>";
     $last_h2   = "";
     $li_list   = "";
-    exec( "grep -ir --include *.md --exclude-dir='.git' \"$search_key\" ".MD_ROOT." | grep -v \`\`\`", $ret_arr, $ret_code );
+    $shellStr  = "grep -ir --include *.md --exclude-dir='.git' \"$search_key\" ".MD_ROOT." | grep -v \`\`\`";
+    exec( $shellStr, $ret_arr, $ret_code );
     if( !empty($ret_arr) )
     {
         foreach( $ret_arr as $key => $value )
