@@ -1,133 +1,11 @@
 <?php
 include_once '../config.php';
-error_reporting(E_ALL);
 
-class Person
-{
-    public function say()
-    {
-        echo $this->name, " is ", $this->gender, PHP_EOL;
-    }
-    public function __call($name, $args)
-    {
-        echo $name, " called ", PHP_EOL;
-    }
-}
-
-class Family
-{
-    public $people;
-    public $location;
-    public function __construct(Person $p, $l)
-    {
-        $this->people = $p;
-        $this->location = $l;
-    }
-    public static function __callStatic($name, $args)
-    {
-    }
-}
-
-class Strings
-{
-    private $str = '';
-    public function __construct($str)
-    {
-        $this->str = $str;
-    }
-    public function __call($name, $args)
-    {
-        $this->str = call_user_func($name, $this->str);
-        return $this;
-    }
-    public function __toString()
-    {
-        return $this->str . "";
-    }
-}
-
-class employee {
-    protected function working(){
-
-    }
-}
-
-class teacher extends employee {
-    public function working()
-    {
-        parent::working();
-        echo "teaching", PHP_EOL;
-    }
-}
-
-class coder extends employee {
-    public function working()
-    {
-        parent::working();
-        echo "写代码", PHP_EOL;
-    }
-}
-
-function doprint( $obj )
-{
-    if( get_class($obj) == 'employee' ){
-        echo "Error";
-    } else {
-        $obj->working();
-    }
-}
-
-//doprint(new teacher());
-//doprint(new coder());
-//doprint(new employee());
-
-interface mobile{
-    public function run();
-}
-class plain implements mobile{
-    public function run(){
-        echo 'plain run';
-    }
-    public function fly(){
-        echo "plain fly";
-    }
-}
-class car implements mobile{
-    public function run(){
-        echo "car run";
-    }
-}
-class machine{
-    function demo(mobile $a){
-        $a -> run();
-    }
-}
-
-$obj = new machine();
-$obj -> demo(new plain());
-$obj -> demo(new car());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-exit();
-// ------------------------------------------------------------------------------------
 session_start();
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
 
 $parser = new HyperDown\Parser();
-
 $host = @$_SERVER["HTTP_HOST"];
 $protocol = "http://";
 if (@$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
@@ -135,7 +13,6 @@ if (@$_SERVER['HTTPS'] == 'on' || @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'
 }
 list($path_info, $query_str) = explode('?', urldecode($_SERVER['REQUEST_URI']));
 
-//exit();
 $site_title = BLOG_TITLE;
 $last_path_info_str = array_reverse(explode("/", $path_info))[0];
 if (!empty($last_path_info_str)) {
@@ -148,10 +25,9 @@ $file_path = str_replace('//', '/', $file_path);
 // 文章
 if (is_file($file_path . ".md")) {
     $html = $parser->makeHtml(file_get_contents($file_path . ".md"));
-}
 
 // 目录
-elseif (is_dir($file_path)) {
+} elseif (is_dir($file_path)) {
     $html = $file_path == MD_ROOT ? "<h1>最新文章</h1>" : "<h1>文章列表</h1>";
 
     $md_file_list = file_list($file_path);
