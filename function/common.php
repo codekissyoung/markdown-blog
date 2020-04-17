@@ -1,5 +1,4 @@
 <?php
-
 function debug($var)
 {
     if( is_string($var) )

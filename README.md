@@ -4,12 +4,16 @@
 
 ## 使用方法
 
-1. `git clone` 本项目到你的`Linux`服务器
+1. `git clone https://github.com/codekissyoung/markdown-blog.git blog`
+
+1. 在项目根目录`blog/`放置`favicon.ico`作为网站图标
+
 1. 将`Apache`或`Nginx`或者其他`Web服务器`的`域名解析路径`设置成本项目的`web`目录
+
 1. 复制`config.example.php`为`config.php`文件, 然后修改之,可以设置的选项如下:
-1. 在本项目根目录新建一个`favicon.ico`文件为自己的图标文件
 
 ```php
+<?php
 // 博客名称
 define("BLOG_TITLE","CodekissYoung Blog");
 
@@ -30,10 +34,10 @@ $IGNORE_FILE = ["link","default","xxx_dir/xxx_dir/file_name"];
 
 - 项目目录要设置成可以访问，并且允许使用`.htaccess`文件
 
-```
-<Directory /home/cky/workspace/>
+```bash
+<Directory /home/user/workspace/>
     Options Indexes FollowSymLinks
-    AllowOverride all 
+    AllowOverride all
     Require all granted
 </Directory>
 ```
@@ -42,6 +46,32 @@ $IGNORE_FILE = ["link","default","xxx_dir/xxx_dir/file_name"];
 
 ```
 sudo a2enmod  rewrite
+```
+
+## Nginx Server 配置参考
+
+```bash
+server {
+    listen 80;
+    root /home/cky/workspace/markdown-blog/web;
+    index index.php index.html;
+    server_name blog.cky.com;
+    rewrite_log on;
+
+    location / {
+        if ( !-e $request_filename ) {
+            rewrite ^/(.*)$ /index.php/$1 last;
+            break;
+        }
+    }
+
+    location ~ \.php($|/) {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}
 ```
 
 ## 案例
