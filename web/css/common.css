@@ -31,7 +31,7 @@ body {
   background-attachment: fixed; }
 
 #site-category {
-  background: white;
+  background: #fefefe;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -141,7 +141,7 @@ body {
   box-sizing: border-box;
   letter-spacing: 1px;
   min-height: 1000px;
-  background-color: white; }
+  background-color: #fefefe; }
 #article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5 {
   display: block;
   font-family: "sans", "Times New Roman", "STKaiti", "Kaiti"; }
@@ -283,7 +283,7 @@ body {
   left: 0px;
   top: 0px;
   display: none;
-  background-color: white;
+  background-color: #fefefe;
   z-index: 1;
   width: 330px; }
 #main_category #main-category-title {

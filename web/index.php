@@ -6,6 +6,8 @@ error_reporting( E_ALL );
 /******************************** config ***************************/
 include_once '../config.php';
 
+// exec("cd /home/cky/workspace/markdown && git pull");
+
 /******************************** libs   ***************************/
 $parser  	  = new HyperDown\Parser();
 
@@ -21,6 +23,7 @@ $last_path_info_str = array_reverse(explode("/",$path_info))[0];
 $site_title         = !empty($last_path_info_str) ? $last_path_info_str." | ".BLOG_TITLE : BLOG_TITLE;
 $file_path          = MD_ROOT."{$path_info}";
 $file_path          = str_replace('//', '/', $file_path);
+
 
 // 文章
 if( is_file( $file_path.".md" ) )
