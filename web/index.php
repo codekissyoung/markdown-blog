@@ -45,11 +45,17 @@ if (is_file($file_path . ".md")) {
         $paths = explode("/", $href);
         $cnt = count($paths);
         $article_name = $paths[$cnt - 1];
+
+        // 过滤掉私有的路径和文章
+        if( $paths[$cnt - 2] == "股票" || $paths[$cnt -2] == "private" )
+           continue; 
+
         $semantic_time = semantic_time($file['time']);
         $html .= "<div class=article-summary-list>";
         $html .= "<h2><a href='$protocol$host/$href'>$article_name</a> <span class=article-create-time> {$semantic_time}</span></h2>";
 
-        if ($i < 50) {
+        if ($i < 50)
+        {
             $content = file_get_contents($file['path']);
             $content_parsed = $parser->makeHtml($content);
             $text = preg_replace("/<h1>.*<\/h1>/m", "", $content_parsed);
